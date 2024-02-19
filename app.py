@@ -4,6 +4,7 @@ import pandas as pd
 
 ''' API CALLS '''
 
+'''
 def call_api(id_number, key='name'):
     #API url
     url = 'API URL goes here'
@@ -30,22 +31,22 @@ def call_api(id_number, key='name'):
 
 def get_id(arguments):
     url.format(id=id_number)
-    '''
+    ''''''
     Get id from command line arguments.
-    '''
+    ''''''
     return arguments['--id']
 
 def __main__():
-    '''
+    ''''''
     Entrypoint of command line interface.
-    '''
+    ''''''
     from docopt import docopt
     arguments = docopt(__doc__, version='0.1.0')
     id_number = get_id(arguments)
     print(call_api(id_number))
 
 df = call_api()
-
+'''
 
 ''' FLASK '''
 
@@ -62,4 +63,6 @@ def about():
     return render_template('prototypes.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+
+###FLASK_APP=app.py flask run

@@ -1,5 +1,162 @@
-h1 {
-    font-weight: bold;
+/*Main*/
+body {
+    margin: 2% 10% 5% 10%;
+    
+    background-color: #ffffff;
+    text-align: left;
+    color: #2e2923;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*Text*/
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     font-size: 2em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2923;
+}
+
+a:hover {
+    color: #c4b29d;
+}
+
+nav{
+    align-content: right;
+    align-self: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    /*text-transform: uppercase;*/
+}
+
+header {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: solid #aaaaaa 1px;
+    text-align:right;
+}
+
+footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: solid #aaaaaa 1px;
+    text-align:right;
+}
+
+.site-title-logo {
+    text-align: left;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*Containers*/
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wide {
+    left: 0;
+    margin-left: -12.5%;
+    margin-right: -12.5%;
+    width: 100vw;
+}
+
+.content-block {
+    margin: 2em 5% 2em 5%;
+}
+
+.flex-one-half{
+    flex: 1 1 0px;
+    width: 50%;
+    margin: 1em;
+}
+
+.flex-one-third{
+    flex-shrink: 1;
+    width: 33%;
+    margin: 1em;
+}
+
+.flex-two-thirds{
+    flex-shrink: 1;
+    width: 66%;
+    margin: 1em;
+}
+
+.flex-one-quarter{
+    flex-shrink: 1;
+    width: 25%;
+    margin: 1em;
+}
+
+.flex-three-quarters{
+    flex-shrink: 1;
+    width: 75%;
+    margin: 1em;
+}
+
+.card-format{
+    background-color: #656274;
+    padding: 2em;
+    color: white;
     text-align: center;
 }
+
+/*Animations*/
+@keyframes fading {
+    0%   {opacity: 1;}
+    25%  {opacity: 0.6;}
+    50%  {opacity: 0.2;}
+    75%  {opacity: 0.6;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes bounce {
+    0%, 100% {transform: translateY(0);} 
+    50% {transform: translateY(-1em);}
+  }
+
+  div.bounce:hover {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  div.fading:hover {
+    animation-name: fading;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
