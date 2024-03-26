@@ -112,7 +112,6 @@ def get_place():
     
 import streamlit as st
 from streamlit.components.v1 import html
-import matplotlib.pyplot as plt
 
 df = get_place()
 chart_data = df
