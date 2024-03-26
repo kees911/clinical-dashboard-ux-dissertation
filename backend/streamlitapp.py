@@ -118,4 +118,4 @@ chart_data = df
 
 
 st.title('Locations')
-st.bar_chart(chart_data, x="state", y="county")
+st.bar_chart(chart_data, x="State", y="County")
