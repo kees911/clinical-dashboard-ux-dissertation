@@ -78,65 +78,44 @@ drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('c
 
 drug_exposure[drug_exposure.drug_concept_id==1338512]
 
-# flask assignment items
+'''flask assignment items'''
 
 import requests
 import numpy as np
-import pandas as pd
+from json import loads, dumps
 
-'''
-def call_api(id_number, key='name'):
-    #API url
-    url = 'API URL goes here'
-    #make request of the URL
-    r = requests.get(url)
-    #turn it into a json
-    item_dict = r.json()
+def get_place():
+    #convert DF to JSON
+    testdict = location_labelled.to_json(orient="table")
+    jsontestdict = loads(testdict)
+    print(dumps(jsontestdict, indent=4))
 
-    identities = []
-    names = []
-    typeses = []
-    spriteses = []
-    for item in item_dict['results']:
-        name = item['name']
-        identity = item['id']
-        types = item['types']
+    #jsontestdict = testdict.json()
 
-        identities.append(identity)
-        names.append(name)
-        typeses.append(types)
-
-    item_df = pd.DataFrame({'ids': identities, 'names': names, 'types': typeses})
-    return item_df
-
-def get_id(arguments):
-    url.format(id=id_number)
-    ''''''
-    Get id from command line arguments.
-    ''''''
-    return arguments['--id']
-
-def __main__():
-    ''''''
-    Entrypoint of command line interface.
-    ''''''
-    from docopt import docopt
-    arguments = docopt(__doc__, version='0.1.0')
-    id_number = get_id(arguments)
-    print(call_api(id_number))
-
-df = call_api()
-'''
-
+    #blank lists
+    location_ids = []
+    states = []
+    counties = []
+    for data in jsontestdict['data']:
+        #extract
+        location_id = data['location_id']
+        state = data['state']
+        county = data['county']
+        #store
+        location_ids.append(location_id)
+        states.append(state)
+        counties.append(county)
+    place_df = pd.DataFrame({ 'Location ID': location_ids, 'State': states, 'County': counties})
+    return place_df
 ''' FLASK '''
-
+df = get_place()
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('home.html', data = df.to_html())
 
 @app.route('/prototypes')
 def about():
