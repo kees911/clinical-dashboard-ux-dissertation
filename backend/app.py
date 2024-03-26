@@ -107,6 +107,7 @@ def get_place():
         counties.append(county)
     place_df = pd.DataFrame({ 'Location ID': location_ids, 'State': states, 'County': counties})
     return place_df
+
 ''' FLASK '''
 df = get_place()
 from flask import Flask, render_template, request
@@ -126,3 +127,30 @@ if __name__ == '__main__':
     app.run()
 
 ###FLASK_APP=app.py flask run
+    
+import streamlit as st
+from streamlit.components.v1 import html
+
+st.title('Regimen Categories')
+
+if "shared" not in st.session_state:
+   st.session_state["shared"] = True
+
+def update_select():
+    if 'loaded' not in st.session_state or not st.session_state.loaded:
+        DATA_URL = ('http://0.0.0.0:5000/regimen/categories')
+        session = requests.Session()
+        data = session.get(DATA_URL)
+        if data.status_code==200:
+            st.session_state['data'] = jsontestdict
+            st.session_state['loaded'] = True
+            st.session_state['categories'] = {cat['state']['county']: (cat['state']['location_id'], cat['n']) for cat in st.session_state.data}
+    return st.session_state.data
+
+data = update_select()
+
+for category in sorted(st.session_state.categories):
+    location_id, n = st.session_state.categories[category]
+    cat_label = category.replace(' ', '_')
+    st.link_button(label=f'{category} ({n})', 
+                   url=f'http://localhost:8501/Regimen_Category/?category_id={location_id}&category_name={category}') 
