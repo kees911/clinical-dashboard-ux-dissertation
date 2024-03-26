@@ -112,27 +112,11 @@ def get_place():
     
 import streamlit as st
 from streamlit.components.v1 import html
+import matplotlib.pyplot as plt
 
-st.title('Regimen Categories')
+df = get_place()
+chart_data = df
 
-if "shared" not in st.session_state:
-   st.session_state["shared"] = True
 
-def update_select():
-    if 'loaded' not in st.session_state or not st.session_state.loaded:
-        DATA_URL = ('http://0.0.0.0:5000/regimen/categories')
-        session = requests.Session()
-        data = session.get(DATA_URL)
-        if data.status_code==200:
-            st.session_state['data'] = jsontestdict
-            st.session_state['loaded'] = True
-            st.session_state['categories'] = {cat['state']['county']: (cat['state']['location_id'], cat['n']) for cat in st.session_state.data}
-    return st.session_state.data
-
-data = update_select()
-
-for category in sorted(st.session_state.categories):
-    location_id, n = st.session_state.categories[category]
-    cat_label = category.replace(' ', '_')
-    st.link_button(label=f'{category} ({n})', 
-                   url=f'http://localhost:8501/Regimen_Category/?category_id={location_id}&category_name={category}') 
+st.title('Locations')
+st.bar_chart(chart_data, x="state", y="county")
