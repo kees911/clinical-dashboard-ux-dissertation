@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="margin: 1em;">
+    {% for idx,row in data.iterrows() %}  
+        <p>{{ row['person_id'] }}</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

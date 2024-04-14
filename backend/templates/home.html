@@ -1,10 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Full List</h1>
+<p>use navigation bar to find appropriate page</p>
 
-<div style="margin: 1em;">
-{{ data | safe }}
-</div>
+<ul class="list-group">
+    <li class="list-group-item list-group-item-action active" aria-current="true"><a href="/">Home</a></li>
+    <li class="list-group-item"><a href="/datasafe">Debug Data</a></li>
+    <li class="list-group-item"><a href="/prototype1">Prototype 1</a></li>
+    <li class="list-group-item"><a href="/prototype2">Prototype 2</a></li>
+    <li class="list-group-item"><div class="ms-2 me-auto">
+        <div class="fw-bold">Widgets</div>
+        <a href="/timeline">Timeline</a><br>
+        <a href="/eventlist">Event List</a><br>
+        <a href="/sunburst">Sunburst</a><br>
+    </div></li>
+</ul>
+
 
 {% endblock %}

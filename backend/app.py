@@ -82,45 +82,49 @@ drug_exposure[drug_exposure.drug_concept_id==1338512]
 
 import requests
 import numpy as np
+import json
 from json import loads, dumps
 
-def get_place():
-    #convert DF to JSON
-    testdict = location_labelled.to_json(orient="table")
-    jsontestdict = loads(testdict)
-    print(dumps(jsontestdict, indent=4))
-
-    #jsontestdict = testdict.json()
-
-    #blank lists
-    location_ids = []
-    states = []
-    counties = []
-    for data in jsontestdict['data']:
-        #extract
-        location_id = data['location_id']
-        state = data['state']
-        county = data['county']
-        #store
-        location_ids.append(location_id)
-        states.append(state)
-        counties.append(county)
-    place_df = pd.DataFrame({ 'Location ID': location_ids, 'State': states, 'County': counties})
-    return place_df
-
 ''' FLASK '''
-df = get_place()
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html', data = df.to_html())
+    return render_template('home.html')
 
-@app.route('/prototypes')
-def about():
-    return render_template('prototypes.html')
+@app.route('/api/persons')
+def get_person():
+    persons = person_labelled.to_dict('index')
+    return jsonify({'persons':persons})
+
+@app.route('/datasafe')
+def datasafe():
+    r = requests.get('https://raw.githubusercontent.com/kees911/clinical-dashboard-ux-dissertation/main/backend/templates/api/persons.html')
+    dfjson = r.json()
+    return render_template('datasafe.html', data = dfjson)
+
+@app.route('/prototype1')
+def prototype1():
+    return render_template('prototype1.html')
+
+@app.route('/prototype2')
+def prototype2():
+    return render_template('prototype2.html')
+
+@app.route('/eventlist')
+def eventlist():
+    return render_template('eventlist.html')
+
+@app.route('/sunburst')
+def sunburst():
+    return render_template('sunburst.html')
+
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html')
+
 
 # Running app
 if __name__ == '__main__':

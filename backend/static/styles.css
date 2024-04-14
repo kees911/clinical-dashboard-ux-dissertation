@@ -132,31 +132,3 @@ footer {
     color: white;
     text-align: center;
 }
-
-/*Animations*/
-@keyframes fading {
-    0%   {opacity: 1;}
-    25%  {opacity: 0.6;}
-    50%  {opacity: 0.2;}
-    75%  {opacity: 0.6;}
-    100% {opacity: 1;}
-  }
-  
-  @keyframes bounce {
-    0%, 100% {transform: translateY(0);} 
-    50% {transform: translateY(-1em);}
-  }
-
-  div.bounce:hover {
-    animation-name: bounce;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-  }
-
-  div.fading:hover {
-    animation-name: fading;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
