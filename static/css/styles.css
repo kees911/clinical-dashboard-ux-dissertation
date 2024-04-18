@@ -1,17 +1,14 @@
 /*Main*/
-body {
+main {
     margin: 2% 10% 5% 10%;
     
     background-color: #ffffff;
     text-align: left;
     color: #2e2923;
-
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 14px;
 }
 
 /*Text*/
-h1{
+/*h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 5em;
@@ -52,9 +49,9 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 3em;
-    /*text-transform: uppercase;*/
+    /*text-transform: uppercase;
 }
-
+*/
 header {
     padding-bottom: 1em;
     margin-bottom: 2em;
@@ -76,7 +73,7 @@ footer {
 .subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
+}*/
 
 /*Containers*/
 .flex-container {

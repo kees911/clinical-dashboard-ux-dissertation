@@ -37,7 +37,7 @@ cohort_files = pd.concat([pd.read_csv(f'{folder}cyclo.csv'),
                           pd.read_csv(f'{folder}breast.csv')])
 
 # copy this as filter to next queries
-print(list(cohort_files.person_id.unique()))
+#print(list(cohort_files.person_id.unique()))
 
 # select *
 # from `bigquery-public-data.cms_synthetic_patient_data_omop.drug_exposure` as p
@@ -48,7 +48,7 @@ condition_occurrence = pd.read_csv('synpuff/condition_occurrence.csv')
 drug_exposure = pd.read_csv('synpuff/drug_exposure.csv')
 concept = pd.read_csv('synpuff/concept.csv')
 
-print(list(person.location_id.unique()))
+#print(list(person.location_id.unique()))
 
 location = pd.read_csv('synpuff/location.csv')
 
@@ -78,56 +78,96 @@ drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('c
 
 drug_exposure[drug_exposure.drug_concept_id==1338512]
 
-'''flask assignment items'''
 
-import requests
+#fill NaN as 0
+drug_exposure_labelled.fillna(0, inplace=True)
+
+#filter for specific pages where only this person needs to be viewed
+drug_person_filtered = drug_exposure_labelled.query('person_id == 1705545')
+
+'''flask assignment items'''
 import numpy as np
+import requests
 import json
 from json import loads, dumps
 
 ''' FLASK '''
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, make_response, Response
 
 app = Flask(__name__)
 
+# Homepage
 @app.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/api/persons')
+# Persons Labelled JSON API
+@app.route('/api/persons', methods=['GET', 'POST'])
 def get_person():
     persons = person_labelled.to_dict('index')
-    return jsonify({'persons':persons})
+    return Response(json.dumps(persons, allow_nan=False),  mimetype='application/json')
 
+# Locations Labelled JSON API
+@app.route('/api/locations', methods=['GET', 'POST'])
+def get_location():
+    locations = location_labelled.to_dict('index')
+    return Response(json.dumps(locations, allow_nan=False),  mimetype='application/json')
+
+# Condition Occurrence Labelled JSON API
+@app.route('/api/conditions', methods=['GET', 'POST'])
+def get_condition():
+    conditions = condition_occurrence_labelled.to_dict('index')
+    return Response(json.dumps(conditions, allow_nan=False),  mimetype='application/json')
+
+# Drug Exposure Labelled JSON API
+@app.route('/api/drugs', methods=['GET', 'POST'])
+def get_drug():
+    drugs = drug_exposure_labelled.to_dict('index')
+    return Response(json.dumps(drugs, allow_nan=False),  mimetype='application/json')
+
+# Debug to make sure that the above json dumps worked - 
+# uses location which is the lightest of the dataframes
 @app.route('/datasafe')
 def datasafe():
-    r = requests.get('https://raw.githubusercontent.com/kees911/clinical-dashboard-ux-dissertation/main/backend/templates/api/persons.html')
-    dfjson = r.json()
-    return render_template('datasafe.html', data = dfjson)
+    ds = location_labelled.to_dict('index')
+    df = pd.DataFrame.from_dict(ds, orient='index')
+    return render_template('datasafe.html',data = df.to_html())
 
+# First prototype page
 @app.route('/prototype1')
 def prototype1():
     return render_template('prototype1.html')
 
+# Second prototype page 
 @app.route('/prototype2')
 def prototype2():
     return render_template('prototype2.html')
 
+# List of events encountered by this person_id
 @app.route('/eventlist')
 def eventlist():
     return render_template('eventlist.html')
 
+# Radial sunburst page featuring d3.js
 @app.route('/sunburst')
 def sunburst():
     return render_template('sunburst.html')
 
+# Lighter, filtered version of the drugs API just for the timeline page
+@app.route('/api/drugs_timeline', methods=['GET', 'POST'])
+def get_drug_timeline():
+    drugs = drug_person_filtered.to_dict('index')
+    return Response(json.dumps(drugs, allow_nan=False),  mimetype='application/json')
+
+# Timeline page featuring vis.js
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html')
+    drugs = drug_person_filtered
+    return render_template('timeline.html', drugs=drugs)
 
 
 # Running app
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = False)
 
 ###FLASK_APP=app.py flask run
