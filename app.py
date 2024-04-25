@@ -78,12 +78,11 @@ drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('c
 
 drug_exposure[drug_exposure.drug_concept_id==1338512]
 
-
 #fill NaN as 0
 drug_exposure_labelled.fillna(0, inplace=True)
 
 #filter for specific pages where only this person needs to be viewed
-drug_person_filtered = drug_exposure_labelled.query('person_id == 1705545')
+drug_person_filtered = drug_exposure_labelled.query('person_id == 200312')
 
 '''flask assignment items'''
 import numpy as np
