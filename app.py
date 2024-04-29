@@ -78,6 +78,8 @@ drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('c
 
 drug_exposure[drug_exposure.drug_concept_id==1338512]
 
+'''Further modifications to the synpuff dataframes'''
+
 #fill NaN as 0
 drug_exposure_labelled.fillna(0, inplace=True)
 
@@ -97,6 +99,8 @@ from jinja2.utils import markupsafe
 markupsafe.Markup()
 from markupsafe import Markup 
 import flask_table
+
+'''Render Templates'''
 
 app = Flask(__name__)
 
