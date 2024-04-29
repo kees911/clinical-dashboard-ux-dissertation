@@ -92,6 +92,11 @@ from json import loads, dumps
 
 ''' FLASK '''
 from flask import Flask, render_template, request, jsonify, make_response, Response
+import flask_wtf
+from jinja2.utils import markupsafe
+markupsafe.Markup()
+from markupsafe import Markup 
+import flask_table
 
 app = Flask(__name__)
 
@@ -151,6 +156,11 @@ def eventlist():
 @app.route('/sunburst')
 def sunburst():
     return render_template('sunburst.html')
+
+# Sankey diagram page featuring Google Charts
+@app.route('/sankey')
+def sankey():
+    return render_template('sankey.html')
 
 # Lighter, filtered version of the drugs API just for the timeline page
 @app.route('/api/drugs_timeline', methods=['GET', 'POST'])
