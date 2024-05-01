@@ -81,10 +81,13 @@ drug_exposure[drug_exposure.drug_concept_id==1338512]
 '''Further modifications to the synpuff dataframes'''
 
 #fill NaN as 0
-drug_exposure_labelled.fillna(0, inplace=True)
+drug_exposure_labelled.fillna("None", inplace=True)
+condition_occurrence_labelled.fillna(0, inplace=True)
 
 #filter for specific pages where only this person needs to be viewed
 drug_person_filtered = drug_exposure_labelled.query('person_id == 200312')
+condition_person_filtered = condition_occurrence_labelled.query('person_id == 200312')
+
 
 '''flask assignment items'''
 import numpy as np
@@ -94,10 +97,7 @@ from json import loads, dumps
 
 ''' FLASK '''
 from flask import Flask, render_template, request, jsonify, make_response, Response
-import flask_wtf
-from jinja2.utils import markupsafe
-markupsafe.Markup()
-from markupsafe import Markup 
+from flask_sqlalchemy import SQLAlchemy
 import flask_table
 
 '''Render Templates'''
@@ -151,11 +151,6 @@ def prototype1():
 def prototype2():
     return render_template('prototype2.html')
 
-# List of events encountered by this person_id
-@app.route('/eventlist')
-def eventlist():
-    return render_template('eventlist.html')
-
 # Radial sunburst page featuring d3.js
 @app.route('/sunburst')
 def sunburst():
@@ -172,12 +167,22 @@ def get_drug_timeline():
     drugs = drug_person_filtered.to_dict('index')
     return Response(json.dumps(drugs, allow_nan=False),  mimetype='application/json')
 
+# Lighter, filtered version of the conditions API just for the timeline page
+@app.route('/api/conditions_timeline', methods=['GET', 'POST'])
+def get_condition_timeline():
+    conditions = condition_person_filtered.to_dict('index')
+    return Response(json.dumps(conditions, allow_nan=False),  mimetype='application/json')
+
 # Timeline page featuring vis.js
 @app.route('/timeline')
 def timeline():
     drugs = drug_person_filtered
     return render_template('timeline.html', drugs=drugs)
 
+# List of events encountered by this person_id
+@app.route('/eventlist')
+def eventlists():
+    return render_template('eventlist.html')
 
 # Running app
 if __name__ == '__main__':
