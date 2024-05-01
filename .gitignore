@@ -1,3 +1,11 @@
 .venv
 clinical-dashboard-ux-dissertation.code-workspace
 synpuff/CONCEPT(1).csv
+synpuff/breast.csv
+synpuff/concept.csv
+synpuff/condition_occurrence.csv
+synpuff/cyclo.csv
+synpuff/doxo.csv
+synpuff/drug_exposure.csv
+synpuff/location.csv
+synpuff/person.csv
