@@ -3,17 +3,17 @@ const url = "http://127.0.0.1:5000/api/drugs_timeline"
 $.getJSON(url, function(myData) {
     // JSON result in `myData` variable
     //console.log(myData);
-    console.log(myData);
+    //console.log(myData);
     //Should print 64 as there are 64 entries for this patient in this dataset
-    console.log(Object.keys(myData).length);
+    //console.log(Object.keys(myData).length);
 
-    console.log(Object.keys(myData))
+    //console.log(Object.keys(myData))
 
-    console.log(Object.values(myData))
+    //console.log(Object.values(myData))
 
     var myArray = [];
     myArray.push(Object.values(myData));
-    console.log(myArray[0].length);
+    //console.log(myArray[0].length);
  
     var str = "";
     var arr;
@@ -35,8 +35,10 @@ $.getJSON(url, function(myData) {
 }
 
 var test = appt();
-console.log(test);
-console.log(typeof(test));
+/* !!! Copy This!
+console.log(test); */
+
+//console.log(typeof(test));
 //Varaibles to populate the timeline content with 
 /*var visit_id = myDat.visit_occurrence_id;
 var start_date = myDat.drug_exposure_start_date;

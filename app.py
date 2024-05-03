@@ -89,17 +89,76 @@ condition_occurrence_labelled.fillna(0, inplace=True)
 drug_person_filtered = drug_exposure_labelled.query('person_id == 200312')
 condition_person_filtered = condition_occurrence_labelled.query('person_id == 200312')
 
-
-'''flask assignment items'''
+'''import libraries'''
 import numpy as np
-import requests
+import matplotlib.pyplot as plt
 import json
 from json import loads, dumps
+import datetime as dt
+
+'''Mutating dataframes for hierarchical display'''
+respiratorydf = condition_occurrence_labelled[condition_occurrence_labelled.condition_concept_label=='Respiratory symptom']
+respiratorycol = respiratorydf.person_id.tolist()
+#print(respiratorycol)
+
+mask = drug_exposure_labelled['person_id'].isin(respiratorycol)
+shrinked = drug_exposure_labelled[mask]
+#print(shrinked)
+
+#shrink df
+small = shrinked[['person_id', 'drug_exposure_start_date', 'drug_concept_label']]
+small.fillna('N/A', inplace=True)
+small['drug_concept_label'] = small.groupby(['person_id', 'drug_exposure_start_date'])['drug_concept_label'].transform(lambda x : ' & '.join(x))
+#print(small)
+smalldd = small.drop_duplicates()
+#print(smalldd)
+
+# https://stackoverflow.com/questions/60829670/how-to-find-repeated-patients-and-add-a-new-column
+readministrations = pd.Series(np.zeros(len(smalldd),dtype=int),index=smalldd.index)
+
+# Loop through all unique ids
+all_id = smalldd['person_id'].unique()
+id_administrations = {}
+for pid in all_id:
+    # These are all the times a patient with a given ID has had surgery
+    patient = smalldd.loc[smalldd['person_id']==pid]
+    administrations_sorted = pd.to_datetime(patient['drug_exposure_start_date'], format='%Y-%m-%d').sort_values()
+
+# This checks if the previous surgery was longer than 180 days ago
+    frequency = administrations_sorted.diff()<dt.timedelta(days=6000)
+
+    # Compute the readmission
+    n_administrations = [0]
+    for v in frequency.values[1:]:
+       n_administrations.append((n_administrations[-1]+1)*v)
+
+    # Add these value to the time series
+    readministrations.loc[administrations_sorted.index] = n_administrations
+
+smalldd['readministration'] = readministrations
+
+pivoted = smalldd.pivot(index='person_id', columns='readministration', values='drug_concept_label').reset_index()
+renamed = pivoted.add_prefix('drug')
+#renamed.head()
+renamed2 = renamed.rename(columns={"drugperson_id": "person_id", "readministration":"index"})
+#renamed2.head()
+
+shrink = renamed2.loc[:, :'drug10']
+#shrink.head()
+fillednones= shrink.fillna("None")
+#fillednones.head()
+fillednones["value"] = 1
+fillednones.head()
 
 ''' FLASK '''
 from flask import Flask, render_template, request, jsonify, make_response, Response
 from flask_sqlalchemy import SQLAlchemy
-import flask_table
+import requests
+
+'''Visualization'''
+import plotly.express as px
+#import flask_table
+import nbformat
 
 '''Render Templates'''
 
@@ -151,6 +210,16 @@ def prototype1():
 @app.route('/prototype2')
 def prototype2():
     return render_template('prototype2.html')
+
+# Icicle chart featuring plotly express
+@app.route('/icicle')
+def icicle():
+    df = fillednones
+    icicle = px.icicle(df, path=[px.Constant("all"), 'drug0', 'drug1', 'drug2', 'drug3', 'drug4', 'drug5'], values='value')
+    icicle.update_traces(root_color="lightgrey")
+    icicle.update_layout(margin = dict(t=50, l=25, r=25, b=25))
+    icicle.show()
+    return render_template('icicle.html')
 
 # Radial sunburst page featuring d3.js
 @app.route('/sunburst')
