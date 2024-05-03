@@ -97,21 +97,21 @@ from json import loads, dumps
 import datetime as dt
 
 '''Mutating dataframes for hierarchical display'''
+
+#filter for only people with respiratory conditions
 respiratorydf = condition_occurrence_labelled[condition_occurrence_labelled.condition_concept_label=='Respiratory symptom']
 respiratorycol = respiratorydf.person_id.tolist()
-#print(respiratorycol)
 
+#mask the drug exposures by only people who had a respiratory condition
 mask = drug_exposure_labelled['person_id'].isin(respiratorycol)
 shrinked = drug_exposure_labelled[mask]
-#print(shrinked)
 
-#shrink df
+#shrink df down to only relevant variables
 small = shrinked[['person_id', 'drug_exposure_start_date', 'drug_concept_label']]
 small.fillna('N/A', inplace=True)
 small['drug_concept_label'] = small.groupby(['person_id', 'drug_exposure_start_date'])['drug_concept_label'].transform(lambda x : ' & '.join(x))
-#print(small)
+#drop total duplicates
 smalldd = small.drop_duplicates()
-#print(smalldd)
 
 # https://stackoverflow.com/questions/60829670/how-to-find-repeated-patients-and-add-a-new-column
 readministrations = pd.Series(np.zeros(len(smalldd),dtype=int),index=smalldd.index)
@@ -135,20 +135,19 @@ for pid in all_id:
     # Add these value to the time series
     readministrations.loc[administrations_sorted.index] = n_administrations
 
+# add column
 smalldd['readministration'] = readministrations
 
+#pivot dataframe from long to wide by drug exposure count per person
 pivoted = smalldd.pivot(index='person_id', columns='readministration', values='drug_concept_label').reset_index()
 renamed = pivoted.add_prefix('drug')
-#renamed.head()
 renamed2 = renamed.rename(columns={"drugperson_id": "person_id", "readministration":"index"})
-#renamed2.head()
 
+#reduce to only the first 11 drug exposures logged per person
 shrink = renamed2.loc[:, :'drug10']
-#shrink.head()
 fillednones= shrink.fillna("None")
-#fillednones.head()
+#assign '1' to all values (as it is one exposure)
 fillednones["value"] = 1
-fillednones.head()
 
 ''' FLASK '''
 from flask import Flask, render_template, request, jsonify, make_response, Response
