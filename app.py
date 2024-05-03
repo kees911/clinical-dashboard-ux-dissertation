@@ -224,6 +224,9 @@ def icicle():
 # Radial sunburst page featuring d3.js
 @app.route('/sunburst')
 def sunburst():
+    df = fillednones
+    sunburst = px.sunburst(df, path=['drug0', 'drug1', 'drug2', 'drug3'], values='value', color_discrete_map={'None':'black'})
+    sunburst.show()
     return render_template('sunburst.html')
 
 # Sankey diagram page featuring Google Charts
