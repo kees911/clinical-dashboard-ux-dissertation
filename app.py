@@ -270,7 +270,7 @@ def timeline():
 # List of events encountered by this person_id
 @app.route('/eventlist')
 def eventlists():
-    return render_template('eventlist.html')
+    return render_template('eventlist.html', panda=personal.to_html(classes = 'my_class" id = "panda'))
 
 # Running app
 if __name__ == '__main__':

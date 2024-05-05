@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
-<table id="datatable"></table>
-</div>
+
+{{ panda|safe }}
+<table id="panda"></table>
+
 {% endblock %}

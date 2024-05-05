@@ -1,7 +1,5 @@
 /*Main*/
 main {
-    margin: 2% 10% 5% 10%;
-    
     background-color: #ffffff;
     text-align: left;
     color: #2e2923;
@@ -55,14 +53,12 @@ nav{
 header {
     padding-bottom: 1em;
     margin-bottom: 2em;
-    border-bottom: solid #aaaaaa 1px;
     text-align:right;
 }
 
 footer {
     margin-top: 2em;
     padding-top: 1em;
-    border-top: solid #aaaaaa 1px;
     text-align:right;
 }
 
@@ -128,4 +124,18 @@ footer {
     padding: 2em;
     color: white;
     text-align: center;
+}
+
+.mainpage{
+    margin: 2% 10% 5% 10%;
+}
+
+.widget{
+    margin: 2% 2% 2% 2%;
+}
+
+.debug{
+    border-style: solid;
+    border-color: red;  
+    border-width: 3px;
 }
