@@ -8,3 +8,4 @@ synpuff/doxo.csv
 synpuff/drug_exposure.csv
 synpuff/location.csv
 synpuff/person.csv
+.venv
