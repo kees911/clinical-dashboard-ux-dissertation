@@ -68,16 +68,15 @@ condition_occurrence_labelled = make_labels(condition_occurrence)
 drug_exposure_labelled = make_labels(drug_exposure)
 location_labelled = make_labels(location)
 
-drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('cyclo', case=False, na=False)]
+#drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('cyclo', case=False, na=False)]
 
-person_labelled.head()
-location_labelled.head()
-condition_occurrence_labelled.head()
-drug_exposure_labelled.head()
+#person_labelled.head()
+#location_labelled.head()
+#condition_occurrence_labelled.head()
+#drug_exposure_labelled.head()
 
-drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('cyclophosphamide', na=False, case=False)]
-
-drug_exposure[drug_exposure.drug_concept_id==1338512]
+#drug_exposure_labelled[drug_exposure_labelled.drug_concept_label.str.contains('cyclophosphamide', na=False, case=False)]
+#drug_exposure[drug_exposure.drug_concept_id==1338512]
 
 '''Further modifications to the synpuff dataframes'''
 
@@ -89,7 +88,7 @@ condition_occurrence_labelled.fillna(0, inplace=True)
 drug_person_filtered = drug_exposure_labelled.query('person_id == 200312')
 condition_person_filtered = condition_occurrence_labelled.query('person_id == 200312')
 
-'''import libraries'''
+'''import more libraries'''
 import numpy as np
 import matplotlib.pyplot as plt
 import json
@@ -149,15 +148,32 @@ fillednones= shrink.fillna("None")
 #assign '1' to all values (as it is one exposure)
 fillednones["value"] = 1
 
+'''Merging dataframes for comprehensive event list for one person'''
+#reduce dataframes down to necessary variables
+condition_reduced = condition_occurrence_labelled[['person_id', 'condition_start_date', 'condition_end_date', 'provider_id', 'visit_occurrence_id', 'condition_concept_label', 'condition_type_concept_label', 'condition_source_concept_label']].copy()
+drug_reduced = drug_exposure_labelled[['person_id', 'drug_exposure_start_date', 'drug_exposure_end_date', 'provider_id', 'visit_occurrence_id', 'drug_concept_label', 'drug_type_concept_label', 'drug_source_concept_label']].copy()
+#rename variables so they are uniform
+cond_renamed = condition_reduced.rename(columns={"person_id":"person","condition_start_date":"start_date","condition_end_date":"end_date","provider_id":"provider","visit_occurrence_id":"visit_id","condition_concept_label":"concept_label","condition_type_concept_label":"type_concept_label","condition_source_concept_label":"source_concept_label"})
+drug_renamed = drug_reduced.rename(columns={"person_id":"person","drug_exposure_start_date":"start_date","drug_exposure_end_date":"end_date","provider_id":"provider","visit_occurrence_id":"visit_id","drug_concept_label":"concept_label","drug_type_concept_label":"type_concept_label","drug_source_concept_label":"source_concept_label"})
+#add new column with category
+cond_renamed["type"] = "condition"
+drug_renamed["type"] = "drug"
+#merge the dataframes
+merge = pd.concat([cond_renamed, drug_renamed])
+#filter by the one test person
+personal_list = merge.query('person == 200312')
+#drop person column since there is now only one
+personal = personal_list.drop(columns=['person'])
+
 ''' FLASK '''
 from flask import Flask, render_template, request, jsonify, make_response, Response
-from flask_sqlalchemy import SQLAlchemy
-import requests
+#from flask_sqlalchemy import SQLAlchemy
+#import requests
 
 '''Visualization'''
 import plotly.express as px
 #import flask_table
-import nbformat
+#import nbformat
 
 '''Render Templates'''
 
