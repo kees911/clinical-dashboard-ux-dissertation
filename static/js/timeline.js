@@ -138,7 +138,7 @@ var options = {
     horizontalScroll: true,
     zoomable: true,
     moveable: true,
-    timeAxis: {scale: 'month', step: 1}
+    timeAxis: {scale: 'day', step: 1}
 };
 
 // Create a Timeline
