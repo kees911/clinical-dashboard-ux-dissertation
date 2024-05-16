@@ -171,9 +171,14 @@ from flask import Flask, render_template, request, jsonify, make_response, Respo
 #import requests
 
 '''Visualization'''
+import plotly
 import plotly.express as px
 #import flask_table
 #import nbformat
+
+#df = fillednones
+#sunburst = px.sunburst(df, path=['drug0', 'drug1', 'drug2', 'drug3'], values='value', color_discrete_map={'None':'black'})
+#sunburst.write_html("templates/sunwidget.html", include_plotlyjs=False)
 
 '''Render Templates'''
 
@@ -216,10 +221,15 @@ def datasafe():
     df = pd.DataFrame.from_dict(ds, orient='index')
     return render_template('datasafe.html',data = df.to_html())
 
+# Sankey diagram page featuring Google Charts
+@app.route('/sunwidget')
+def sunwidget():
+    return render_template('sunwidget.html')
+
 # First prototype page
 @app.route('/prototype1')
 def prototype1():
-    return render_template('prototype1.html')
+    return render_template('prototype1.html', p1panda=personal.to_html(classes = 'my_class" id = "p1panda'))
 
 # Second prototype page 
 @app.route('/prototype2')
@@ -248,6 +258,8 @@ def sunburst():
 @app.route('/sankey')
 def sankey():
     return render_template('sankey.html')
+
+
 
 # Lighter, filtered version of the drugs API just for the timeline page
 @app.route('/api/drugs_timeline', methods=['GET', 'POST'])

@@ -2,6 +2,15 @@
 {% block content %}
 
 
-<div class="debug" style="width:1920px; height:1080px;">maximum extents</div>
+<div class="debug p1-grid-wrapper" id="p1-overall-wrapper">
+    <div class="debug" id="p1-sidebar">sidebar</div>
+    <div id="p1-hierarchy" class=" debug plotly-graph-div"></div>            
+    <div class="debug" id="p1-weight">weight</div>
+    <div class="debug" id="p1-doctor">doctor</div>
+    <div class="debug" id="p1-consult">{{ p1panda|safe }}<table id="p1panda"></table></div>
+    <div class="debug" id="p1-timeline-visualization"></div>
+</div>
 
+<script type="text/javascript" src={{ url_for('static', filename='/js/sunwidget.js') }}>
+</script>
 {% endblock %}

@@ -61,7 +61,7 @@ console.log(drug_name);*/
 };*/
 
 // DOM element where the Timeline will be attached
-var container = document.getElementById('timeline-visualization');
+var container = document.getElementById('p1-timeline-visualization');
 
 // Create a DataSet (allows two way data-binding)
 var items = new vis.DataSet([{id:0, content:'metformin hydrochloride 500 MG Oral Tablet', start:'2008-03-21', end:'2008-04-19'},
