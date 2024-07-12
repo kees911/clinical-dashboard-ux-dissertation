@@ -3,14 +3,27 @@
 
 
 <div class="debug p1-grid-wrapper" id="p1-overall-wrapper">
-    <div class="debug" id="p1-sidebar">sidebar</div>
-    <div id="p1-hierarchy" class=" debug plotly-graph-div"></div>            
-    <div class="debug" id="p1-weight">weight</div>
-    <div class="debug" id="p1-doctor">doctor</div>
+    <!--div id="p1-hierarchy" class=" debug plotly-graph-div"></div-->    
+    <!--iframe src="/sankey" id="p1-hierarchy" class="debug" scrolling="yes"></iframe-->
+    <a href="http://127.0.0.1:8050/" target="_blank"><div id="p1-hierarchy"><img src={{ url_for('static', filename='/assets/capture-activated.jpg') }} onmouseover="this.src='{{ url_for('static', filename='/assets/capture-deactivated.jpg') }}';" onmouseout="this.src='{{ url_for('static', filename='/assets/capture-activated.jpg') }}';"/></div></a>
+    <div id="p1-weight" class="debug plotly-graph-div"></div>
     <div class="debug" id="p1-consult">{{ p1panda|safe }}<table id="p1panda"></table></div>
-    <div class="debug" id="p1-timeline-visualization"></div>
+    <div class="debug" id="p1-timeline"></div>
+    <div class="debug" id="p1-sidebar">
+        <h3>Mr John <br><b>DOE</b></h3>
+        <p><b>D.O.B.: </b>1 JANUARY 1955 <br> (AGE 57)</p>
+        <p><b>Gender: </b>MALE</p>
+        <p><b>Address: </b>123 Road Street, <br>City, STATE, 0000</p>
+        <p><b>Contact:</b><br><b>Tel: </b>0123 456 789<br><b>Email: </b>email@email.com</p>
+        <hr>
+        <h4>Provider Name</h4>
+        <br><p><b>Provider No.: </b>#1234567890</p>
+        <br><p><b>Last Appointment: </b>1 JANUARY 2012<br><b>Next Appointment: </b>2 FEBRUARY 2012</p>
+        <img src={{ url_for('static', filename='/assets/calendar.PNG') }}>
+    </div>
 </div>
-
-<script type="text/javascript" src={{ url_for('static', filename='/js/sunwidget.js') }}>
-</script>
+<script src={{ url_for('static', filename='/js/widgets/weight.js') }} type="text/javascript"></script>
+<!--script type="text/javascript" src={{ url_for('static', filename='/js/widgets/sunwidget.js') }}>
+</script-->
+<script type="text/javascript" src={{ url_for('static', filename='/js/widgets/calendar.js') }}></script>
 {% endblock %}
