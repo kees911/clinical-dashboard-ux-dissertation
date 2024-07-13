@@ -1,0 +1,854 @@
+concept_id_x,concept_name_x,concept_code_x,ancestor_concept_id,descendant_concept_id,concept_id_y,concept_code_y,concept_name_y
+35804384,Fluoroquinolone,10656,35807476,35804384,35807476,46136,Antibiotic
+35804384,Fluoroquinolone,10656,35807328,35804384,35807328,45517,Antibacterial
+35804578,PCP prophylaxis,11948,35807476,35804578,35807476,46136,Antibiotic
+912007,Antineoplastic monoclonal antibody,12278,912163,912007,912163,58229,Targeted therapeutic
+912007,Antineoplastic monoclonal antibody,12278,35807466,912007,35807466,46112,Antineoplastics by class effect
+912007,Antineoplastic monoclonal antibody,12278,35807190,912007,35807190,44947,Antibody medication
+35101847,Anti-CD79B antibody,13066,912007,35101847,912007,12278,Antineoplastic monoclonal antibody
+35101847,Anti-CD79B antibody,13066,912163,35101847,912163,58229,Targeted therapeutic
+35101847,Anti-CD79B antibody,13066,35807466,35101847,35807466,46112,Antineoplastics by class effect
+35101847,Anti-CD79B antibody,13066,35807190,35101847,35807190,44947,Antibody medication
+42542253,Anti-nectin-4 antibody,1347,912007,42542253,912007,12278,Antineoplastic monoclonal antibody
+42542253,Anti-nectin-4 antibody,1347,912163,42542253,912163,58229,Targeted therapeutic
+42542253,Anti-nectin-4 antibody,1347,35807466,42542253,35807466,46112,Antineoplastics by class effect
+42542253,Anti-nectin-4 antibody,1347,35807190,42542253,35807190,44947,Antibody medication
+912052,Cytotoxic chemotherapeutic,16456,35807466,912052,35807466,46112,Antineoplastics by class effect
+1524883,Anti-TF antibody,21436,912007,1524883,912007,12278,Antineoplastic monoclonal antibody
+1524883,Anti-TF antibody,21436,912163,1524883,912163,58229,Targeted therapeutic
+1524883,Anti-TF antibody,21436,35807190,1524883,35807190,44947,Antibody medication
+1524883,Anti-TF antibody,21436,35807466,1524883,35807466,46112,Antineoplastics by class effect
+1524885,Anti-VEGF antibody,21537,912163,1524885,912163,58229,Targeted therapeutic
+1524885,Anti-VEGF antibody,21537,912007,1524885,912007,12278,Antineoplastic monoclonal antibody
+1524885,Anti-VEGF antibody,21537,35807466,1524885,35807466,46112,Antineoplastics by class effect
+1524885,Anti-VEGF antibody,21537,35807190,1524885,35807190,44947,Antibody medication
+912087,Hematologic monoclonal antibody,22790,35807190,912087,35807190,44947,Antibody medication
+905625,Keratinocyte growth factor,29177,905615,905625,905615,20221,Growth factor
+905635,Anti-HGFR antibody,29773,912007,905635,912007,12278,Antineoplastic monoclonal antibody
+905635,Anti-HGFR antibody,29773,912163,905635,912163,58229,Targeted therapeutic
+905635,Anti-HGFR antibody,29773,35807190,905635,35807190,44947,Antibody medication
+905635,Anti-HGFR antibody,29773,35807466,905635,35807466,46112,Antineoplastics by class effect
+35803624,Antithymocyte globulin,2988,35807335,35803624,35807335,45538,Immunosuppressant
+905646,Anti-C1s antibody,31981,912161,905646,912161,58102,Immunosuppressive monoclonal antibody
+905646,Anti-C1s antibody,31981,35807335,905646,35807335,45538,Immunosuppressant
+905646,Anti-C1s antibody,31981,35807190,905646,35807190,44947,Antibody medication
+912123,Anthracenedione,32743,912052,912123,912052,16456,Cytotoxic chemotherapeutic
+912123,Anthracenedione,32743,1525005,912123,1525005,43610,Antitumor antibiotic
+912123,Anthracenedione,32743,35807466,912123,35807466,46112,Antineoplastics by class effect
+912136,CDK4 inhibitor,32998,912163,912136,912163,58229,Targeted therapeutic
+912136,CDK4 inhibitor,32998,912191,912136,912191,59452,Serine-threonine kinase inhibitor
+912136,CDK4 inhibitor,32998,35807466,912136,35807466,46112,Antineoplastics by class effect
+912136,CDK4 inhibitor,32998,35807203,912136,35807203,44963,CDK inhibitor
+912136,CDK4 inhibitor,32998,35807197,912136,35807197,44955,Kinase inhibitor
+912137,CDK6 inhibitor,32999,912191,912137,912191,59452,Serine-threonine kinase inhibitor
+912137,CDK6 inhibitor,32999,912163,912137,912163,58229,Targeted therapeutic
+912137,CDK6 inhibitor,32999,35807466,912137,35807466,46112,Antineoplastics by class effect
+912137,CDK6 inhibitor,32999,35807203,912137,35807203,44963,CDK inhibitor
+912137,CDK6 inhibitor,32999,35807197,912137,35807197,44955,Kinase inhibitor
+912140,CK1 epsilon inhibitor,34016,912141,912140,912141,34026,CK1 inhibitor
+912140,CK1 epsilon inhibitor,34016,912191,912140,912191,59452,Serine-threonine kinase inhibitor
+912140,CK1 epsilon inhibitor,34016,912163,912140,912163,58229,Targeted therapeutic
+912140,CK1 epsilon inhibitor,34016,35807197,912140,35807197,44955,Kinase inhibitor
+912140,CK1 epsilon inhibitor,34016,35807466,912140,35807466,46112,Antineoplastics by class effect
+912141,CK1 inhibitor,34026,912191,912141,912191,59452,Serine-threonine kinase inhibitor
+912141,CK1 inhibitor,34026,912163,912141,912163,58229,Targeted therapeutic
+912141,CK1 inhibitor,34026,35807466,912141,35807466,46112,Antineoplastics by class effect
+912141,CK1 inhibitor,34026,35807197,912141,35807197,44955,Kinase inhibitor
+1524966,Anti-LAG-3 antibody,37229,912160,1524966,912160,58101,Immunostimulatory monoclonal antibody
+1524966,Anti-LAG-3 antibody,37229,35807466,1524966,35807466,46112,Antineoplastics by class effect
+1524966,Anti-LAG-3 antibody,37229,35807190,1524966,35807190,44947,Antibody medication
+1524966,Anti-LAG-3 antibody,37229,35807189,1524966,35807189,44946,Immunotherapeutic
+1524993,Adrenal suppressant,39019,35807466,1524993,35807466,46112,Antineoplastics by class effect
+1524993,Adrenal suppressant,39019,35807205,1524993,35807205,44970,Endocrine therapeutic
+911945,Anti-BCMA antibody,4103,912007,911945,912007,12278,Antineoplastic monoclonal antibody
+911945,Anti-BCMA antibody,4103,912163,911945,912163,58229,Targeted therapeutic
+911945,Anti-BCMA antibody,4103,35807190,911945,35807190,44947,Antibody medication
+911945,Anti-BCMA antibody,4103,35807466,911945,35807466,46112,Antineoplastics by class effect
+1524998,Anti-BCMA cellular therapy,43130,35807443,1524998,35807443,45998,Intervention index
+1524998,Anti-BCMA cellular therapy,43130,35807274,1524998,35807274,45186,Cellular therapy
+1524998,Anti-BCMA cellular therapy,43130,35807483,1524998,35807483,46156,Biologic product
+1524998,Anti-BCMA cellular therapy,43130,35807189,1524998,35807189,44946,Immunotherapeutic
+1524998,Anti-BCMA cellular therapy,43130,35807466,1524998,35807466,46112,Antineoplastics by class effect
+1524999,Anti-CD137 cellular therapy,43200,35807274,1524999,35807274,45186,Cellular therapy
+1524999,Anti-CD137 cellular therapy,43200,35807466,1524999,35807466,46112,Antineoplastics by class effect
+1524999,Anti-CD137 cellular therapy,43200,35807189,1524999,35807189,44946,Immunotherapeutic
+1524999,Anti-CD137 cellular therapy,43200,35807443,1524999,35807443,45998,Intervention index
+1524999,Anti-CD137 cellular therapy,43200,35807483,1524999,35807483,46156,Biologic product
+1525000,Anti-CD19 cellular therapy,43292,35807483,1525000,35807483,46156,Biologic product
+1525000,Anti-CD19 cellular therapy,43292,35807466,1525000,35807466,46112,Antineoplastics by class effect
+1525000,Anti-CD19 cellular therapy,43292,35807189,1525000,35807189,44946,Immunotherapeutic
+1525000,Anti-CD19 cellular therapy,43292,35807443,1525000,35807443,45998,Intervention index
+1525000,Anti-CD19 cellular therapy,43292,35807274,1525000,35807274,45186,Cellular therapy
+1525001,Anti-CD20 cellular therapy,43407,35807466,1525001,35807466,46112,Antineoplastics by class effect
+1525001,Anti-CD20 cellular therapy,43407,35807189,1525001,35807189,44946,Immunotherapeutic
+1525001,Anti-CD20 cellular therapy,43407,35807274,1525001,35807274,45186,Cellular therapy
+1525001,Anti-CD20 cellular therapy,43407,35807483,1525001,35807483,46156,Biologic product
+1525001,Anti-CD20 cellular therapy,43407,35807443,1525001,35807443,45998,Intervention index
+1525002,Anti-CD28 cellular therapy,43483,35807189,1525002,35807189,44946,Immunotherapeutic
+1525002,Anti-CD28 cellular therapy,43483,35807466,1525002,35807466,46112,Antineoplastics by class effect
+1525002,Anti-CD28 cellular therapy,43483,35807274,1525002,35807274,45186,Cellular therapy
+1525002,Anti-CD28 cellular therapy,43483,35807483,1525002,35807483,46156,Biologic product
+1525002,Anti-CD28 cellular therapy,43483,35807443,1525002,35807443,45998,Intervention index
+1525004,Anti-CD3 cellular therapy,43578,35807483,1525004,35807483,46156,Biologic product
+1525004,Anti-CD3 cellular therapy,43578,35807466,1525004,35807466,46112,Antineoplastics by class effect
+1525004,Anti-CD3 cellular therapy,43578,35807274,1525004,35807274,45186,Cellular therapy
+1525004,Anti-CD3 cellular therapy,43578,35807189,1525004,35807189,44946,Immunotherapeutic
+1525004,Anti-CD3 cellular therapy,43578,35807443,1525004,35807443,45998,Intervention index
+1525005,Antitumor antibiotic,43610,912052,1525005,912052,16456,Cytotoxic chemotherapeutic
+1525005,Antitumor antibiotic,43610,35807466,1525005,35807466,46112,Antineoplastics by class effect
+35101599,Cephalosporin,44125,35807476,35101599,35807476,46136,Antibiotic
+35101599,Cephalosporin,44125,35807328,35101599,35807328,45517,Antibacterial
+1525007,STAMP inhibitor,44629,912163,1525007,912163,58229,Targeted therapeutic
+1525007,STAMP inhibitor,44629,912198,1525007,912198,59504,Tyrosine kinase inhibitor
+1525007,STAMP inhibitor,44629,35807466,1525007,35807466,46112,Antineoplastics by class effect
+1525007,STAMP inhibitor,44629,35807197,1525007,35807197,44955,Kinase inhibitor
+1525007,STAMP inhibitor,44629,35807297,1525007,35807297,45312,Bcr-Abl inhibitor
+905689,HIF-2a inhibitor,44899,905787,905689,905787,65163,Transcription factor inhibitor
+905689,HIF-2a inhibitor,44899,912163,905689,912163,58229,Targeted therapeutic
+905689,HIF-2a inhibitor,44899,35807466,905689,35807466,46112,Antineoplastics by class effect
+35807189,Immunotherapeutic,44946,35807466,35807189,35807466,46112,Antineoplastics by class effect
+35807191,T-cell activator,44948,35807189,35807191,35807189,44946,Immunotherapeutic
+35807191,T-cell activator,44948,35807466,35807191,35807466,46112,Antineoplastics by class effect
+35807192,BiTE antibody,44949,912163,35807192,912163,58229,Targeted therapeutic
+35807192,BiTE antibody,44949,912160,35807192,912160,58101,Immunostimulatory monoclonal antibody
+35807192,BiTE antibody,44949,912007,35807192,912007,12278,Antineoplastic monoclonal antibody
+35807192,BiTE antibody,44949,35807466,35807192,35807466,46112,Antineoplastics by class effect
+35807192,BiTE antibody,44949,35807189,35807192,35807189,44946,Immunotherapeutic
+35807192,BiTE antibody,44949,35807190,35807192,35807190,44947,Antibody medication
+35807192,BiTE antibody,44949,35807364,35807192,35807364,45707,Bispecific antibody medication
+35807193,Anti-CD33 antibody,44950,912007,35807193,912007,12278,Antineoplastic monoclonal antibody
+35807193,Anti-CD33 antibody,44950,912163,35807193,912163,58229,Targeted therapeutic
+35807193,Anti-CD33 antibody,44950,35807190,35807193,35807190,44947,Antibody medication
+35807193,Anti-CD33 antibody,44950,35807466,35807193,35807466,46112,Antineoplastics by class effect
+35807194,Anti-CD3 antibody,44951,912160,35807194,912160,58101,Immunostimulatory monoclonal antibody
+35807194,Anti-CD3 antibody,44951,35807189,35807194,35807189,44946,Immunotherapeutic
+35807194,Anti-CD3 antibody,44951,35807466,35807194,35807466,46112,Antineoplastics by class effect
+35807194,Anti-CD3 antibody,44951,35807190,35807194,35807190,44947,Antibody medication
+35807197,Kinase inhibitor,44955,912163,35807197,912163,58229,Targeted therapeutic
+35807197,Kinase inhibitor,44955,35807466,35807197,35807466,46112,Antineoplastics by class effect
+35807198,AKT1 inhibitor,44956,912163,35807198,912163,58229,Targeted therapeutic
+35807198,AKT1 inhibitor,44956,912191,35807198,912191,59452,Serine-threonine kinase inhibitor
+35807198,AKT1 inhibitor,44956,35807197,35807198,35807197,44955,Kinase inhibitor
+35807198,AKT1 inhibitor,44956,35807466,35807198,35807466,46112,Antineoplastics by class effect
+35807200,GPIIb-IIIa inhibitor,44958,35807468,35807200,35807468,46116,Antiplatelet agent
+35807201,Anti-GPIIb-IIIa antibody,44959,912087,35807201,912087,22790,Hematologic monoclonal antibody
+35807201,Anti-GPIIb-IIIa antibody,44959,35807190,35807201,35807190,44947,Antibody medication
+35807203,CDK inhibitor,44963,912163,35807203,912163,58229,Targeted therapeutic
+35807203,CDK inhibitor,44963,912191,35807203,912191,59452,Serine-threonine kinase inhibitor
+35807203,CDK inhibitor,44963,35807197,35807203,35807197,44955,Kinase inhibitor
+35807203,CDK inhibitor,44963,35807466,35807203,35807466,46112,Antineoplastics by class effect
+35807204,HDAC inhibitor,44966,912163,35807204,912163,58229,Targeted therapeutic
+35807204,HDAC inhibitor,44966,35807471,35807204,35807471,46122,Enzyme inhibitor
+35807204,HDAC inhibitor,44966,35807466,35807204,35807466,46112,Antineoplastics by class effect
+35807205,Endocrine therapeutic,44970,35807466,35807205,35807466,46112,Antineoplastics by class effect
+35807206,Antiandrogen,44971,35807466,35807206,35807466,46112,Antineoplastics by class effect
+35807206,Antiandrogen,44971,35807205,35807206,35807205,44970,Endocrine therapeutic
+35807207,Steroid synthesis inhibitor,44972,35807466,35807207,35807466,46112,Antineoplastics by class effect
+35807207,Steroid synthesis inhibitor,44972,35807205,35807207,35807205,44970,Endocrine therapeutic
+35807208,BTK inhibitor,44976,912198,35807208,912198,59504,Tyrosine kinase inhibitor
+35807208,BTK inhibitor,44976,912163,35807208,912163,58229,Targeted therapeutic
+35807208,BTK inhibitor,44976,35807197,35807208,35807197,44955,Kinase inhibitor
+35807208,BTK inhibitor,44976,35807466,35807208,35807466,46112,Antineoplastics by class effect
+35807211,FDA approved drug,44981,35807474,35807211,35807474,46132,Approved drug
+35807213,WHO Essential Pain and Palliative Care Medicine,44983,35807475,35807213,35807475,46134,WHO Essential Medicine
+35807214,Anthracycline,44985,912052,35807214,912052,16456,Cytotoxic chemotherapeutic
+35807214,Anthracycline,44985,1525005,35807214,1525005,43610,Antitumor antibiotic
+35807214,Anthracycline,44985,35807466,35807214,35807466,46112,Antineoplastics by class effect
+35807215,Topoisomerase inhibitor,44986,912052,35807215,912052,16456,Cytotoxic chemotherapeutic
+35807215,Topoisomerase inhibitor,44986,35807466,35807215,35807466,46112,Antineoplastics by class effect
+35807216,PMDA approved drug,44988,35807474,35807216,35807474,46132,Approved drug
+35807217,Radiotherapy medication,44991,35807298,35807217,35807298,45316,Radiation
+35807217,Radiotherapy medication,44991,35807443,35807217,35807443,45998,Intervention index
+35807219,Antiviral,44995,35807476,35807219,35807476,46136,Antibiotic
+35807220,Irritant,44997,911930,35807220,911930,1121,Drugs by local effect
+35807221,Antibody-drug conjugate,45000,912052,35807221,912052,16456,Cytotoxic chemotherapeutic
+35807221,Antibody-drug conjugate,45000,912163,35807221,912163,58229,Targeted therapeutic
+35807221,Antibody-drug conjugate,45000,912007,35807221,912007,12278,Antineoplastic monoclonal antibody
+35807221,Antibody-drug conjugate,45000,35807190,35807221,35807190,44947,Antibody medication
+35807221,Antibody-drug conjugate,45000,35807466,35807221,35807466,46112,Antineoplastics by class effect
+35807222,Anti-HER2 antibody,45001,912007,35807222,912007,12278,Antineoplastic monoclonal antibody
+35807222,Anti-HER2 antibody,45001,912163,35807222,912163,58229,Targeted therapeutic
+35807222,Anti-HER2 antibody,45001,35807466,35807222,35807466,46112,Antineoplastics by class effect
+35807222,Anti-HER2 antibody,45001,35807190,35807222,35807190,44947,Antibody medication
+35807223,Microtubule inhibitor,45002,912052,35807223,912052,16456,Cytotoxic chemotherapeutic
+35807223,Microtubule inhibitor,45002,35807466,35807223,35807466,46112,Antineoplastics by class effect
+35807225,EGFR inhibitor,45006,912163,35807225,912163,58229,Targeted therapeutic
+35807225,EGFR inhibitor,45006,912198,35807225,912198,59504,Tyrosine kinase inhibitor
+35807225,EGFR inhibitor,45006,35807466,35807225,35807466,46112,Antineoplastics by class effect
+35807225,EGFR inhibitor,45006,35807197,35807225,35807197,44955,Kinase inhibitor
+35807225,EGFR inhibitor,45006,35807478,35807225,35807478,46140,Growth factor inhibitor
+35807226,ERBB2 inhibitor,45007,912163,35807226,912163,58229,Targeted therapeutic
+35807226,ERBB2 inhibitor,45007,912198,35807226,912198,59504,Tyrosine kinase inhibitor
+35807226,ERBB2 inhibitor,45007,35807466,35807226,35807466,46112,Antineoplastics by class effect
+35807226,ERBB2 inhibitor,45007,35807478,35807226,35807478,46140,Growth factor inhibitor
+35807226,ERBB2 inhibitor,45007,35807197,35807226,35807197,44955,Kinase inhibitor
+35807227,ERBB4 inhibitor,45008,912198,35807227,912198,59504,Tyrosine kinase inhibitor
+35807227,ERBB4 inhibitor,45008,912163,35807227,912163,58229,Targeted therapeutic
+35807227,ERBB4 inhibitor,45008,35807197,35807227,35807197,44955,Kinase inhibitor
+35807227,ERBB4 inhibitor,45008,35807478,35807227,35807478,46140,Growth factor inhibitor
+35807227,ERBB4 inhibitor,45008,35807466,35807227,35807466,46112,Antineoplastics by class effect
+35807228,Cytokine,45017,35807466,35807228,35807466,46112,Antineoplastics by class effect
+35807228,Cytokine,45017,35807189,35807228,35807189,44946,Immunotherapeutic
+35807229,ALK inhibitor,45025,912198,35807229,912198,59504,Tyrosine kinase inhibitor
+35807229,ALK inhibitor,45025,912163,35807229,912163,58229,Targeted therapeutic
+35807229,ALK inhibitor,45025,35807466,35807229,35807466,46112,Antineoplastics by class effect
+35807229,ALK inhibitor,45025,35807197,35807229,35807197,44955,Kinase inhibitor
+35807230,Neutral,45027,911930,35807230,911930,1121,Drugs by local effect
+35807231,Anti-CD52 antibody,45030,912163,35807231,912163,58229,Targeted therapeutic
+35807231,Anti-CD52 antibody,45030,912007,35807231,912007,12278,Antineoplastic monoclonal antibody
+35807231,Anti-CD52 antibody,45030,35807190,35807231,35807190,44947,Antibody medication
+35807231,Anti-CD52 antibody,45030,35807466,35807231,35807466,46112,Antineoplastics by class effect
+35807232,REMS program,45039,35807474,35807232,35807474,46132,Approved drug
+35807232,REMS program,45039,35807211,35807232,35807211,44981,FDA approved drug
+35807233,Bisphosphonate,45041,35807481,35807233,35807481,46152,Bone protective medication
+35807187,Aurora kinase inhibitor,45044,912163,35807187,912163,58229,Targeted therapeutic
+35807187,Aurora kinase inhibitor,45044,912191,35807187,912191,59452,Serine-threonine kinase inhibitor
+35807187,Aurora kinase inhibitor,45044,35807466,35807187,35807466,46112,Antineoplastics by class effect
+35807187,Aurora kinase inhibitor,45044,35807197,35807187,35807197,44955,Kinase inhibitor
+35807234,Retinoid,45047,912052,35807234,912052,16456,Cytotoxic chemotherapeutic
+35807234,Retinoid,45047,35807466,35807234,35807466,46112,Antineoplastics by class effect
+35807235,WHO Essential Cancer Medicine,45050,35807475,35807235,35807475,46134,WHO Essential Medicine
+35807236,Xanthine oxidase inhibitor,45053,35807433,35807236,35807433,45969,Uric acid lowering agent
+35807237,Benzodiazepine,45056,35803694,35807237,35803694,3422,Emesis prevention
+35807238,Alkylating agent,45058,912052,35807238,912052,16456,Cytotoxic chemotherapeutic
+35807238,Alkylating agent,45058,35807466,35807238,35807466,46112,Antineoplastics by class effect
+35807240,Anti-mesothelin antibody,45066,912007,35807240,912007,12278,Antineoplastic monoclonal antibody
+35807240,Anti-mesothelin antibody,45066,912163,35807240,912163,58229,Targeted therapeutic
+35807240,Anti-mesothelin antibody,45066,35807190,35807240,35807190,44947,Antibody medication
+35807240,Anti-mesothelin antibody,45066,35807466,35807240,35807466,46112,Antineoplastics by class effect
+35807243,Hemostasis medication,45073,35807242,35807243,35807242,45072,Hematology medication
+35807244,Fibrinolysis inhibitor,45074,35807480,35807244,35807480,46148,Classical hematology medication
+35807245,Aromatase inhibitor,45079,911924,35807245,911924,918,Antiestrogen
+35807245,Aromatase inhibitor,45079,35807205,35807245,35807205,44970,Endocrine therapeutic
+35807245,Aromatase inhibitor,45079,35807466,35807245,35807466,46112,Antineoplastics by class effect
+35807247,Antimetabolite,45081,912052,35807247,912052,16456,Cytotoxic chemotherapeutic
+35807247,Antimetabolite,45081,35807466,35807247,35807466,46112,Antineoplastics by class effect
+35807248,Antifolate,45082,912052,35807248,912052,16456,Cytotoxic chemotherapeutic
+35807248,Antifolate,45082,35807466,35807248,35807466,46112,Antineoplastics by class effect
+35807248,Antifolate,45082,35807247,35807248,35807247,45081,Antimetabolite
+35807250,Vesicant,45092,911930,35807250,911930,1121,Drugs by local effect
+35807251,Human DNA synthesis inhibitor,45093,912052,35807251,912052,16456,Cytotoxic chemotherapeutic
+35807251,Human DNA synthesis inhibitor,45093,35807466,35807251,35807466,46112,Antineoplastics by class effect
+35807252,Health Canada approved drug,45096,35807474,35807252,35807474,46132,Approved drug
+35807253,Phosphodiesterase inhibitor,45099,35807480,35807253,35807480,46148,Classical hematology medication
+35807254,Fractionated plasma product,45108,35807443,35807254,35807443,45998,Intervention index
+35807254,Fractionated plasma product,45108,35807483,35807254,35807483,46156,Biologic product
+35807255,Coagulation factor,45115,35807480,35807255,35807480,46148,Classical hematology medication
+35807256,Nonsteroidal antiandrogen,45129,35807205,35807256,35807205,44970,Endocrine therapeutic
+35807256,Nonsteroidal antiandrogen,45129,35807466,35807256,35807466,46112,Antineoplastics by class effect
+35807256,Nonsteroidal antiandrogen,45129,35807206,35807256,35807206,44971,Antiandrogen
+35807257,VEGFR inhibitor,45133,912198,35807257,912198,59504,Tyrosine kinase inhibitor
+35807257,VEGFR inhibitor,45133,912163,35807257,912163,58229,Targeted therapeutic
+35807257,VEGFR inhibitor,45133,35807466,35807257,35807466,46112,Antineoplastics by class effect
+35807257,VEGFR inhibitor,45133,35807197,35807257,35807197,44955,Kinase inhibitor
+35807257,VEGFR inhibitor,45133,35807478,35807257,35807478,46140,Growth factor inhibitor
+35807258,KIT inhibitor,45134,912198,35807258,912198,59504,Tyrosine kinase inhibitor
+35807258,KIT inhibitor,45134,912163,35807258,912163,58229,Targeted therapeutic
+35807258,KIT inhibitor,45134,35807197,35807258,35807197,44955,Kinase inhibitor
+35807258,KIT inhibitor,45134,35807478,35807258,35807478,46140,Growth factor inhibitor
+35807258,KIT inhibitor,45134,35807466,35807258,35807466,46112,Antineoplastics by class effect
+35807259,SRC inhibitor,45135,912163,35807259,912163,58229,Targeted therapeutic
+35807259,SRC inhibitor,45135,912198,35807259,912198,59504,Tyrosine kinase inhibitor
+35807259,SRC inhibitor,45135,35807466,35807259,35807466,46112,Antineoplastics by class effect
+35807259,SRC inhibitor,45135,35807197,35807259,35807197,44955,Kinase inhibitor
+35807261,Direct oral anticoagulant,45140,35807264,35807261,35807264,45147,Anticoagulant
+35807261,Direct oral anticoagulant,45140,35807480,35807261,35807480,46148,Classical hematology medication
+35807262,Factor Xa inhibitor,45141,35807480,35807262,35807480,46148,Classical hematology medication
+35807262,Factor Xa inhibitor,45141,35807264,35807262,35807264,45147,Anticoagulant
+35807263,Neurokinin 1 (NK1) antagonist,45145,35803694,35807263,35803694,3422,Emesis prevention
+35807264,Anticoagulant,45147,35807480,35807264,35807480,46148,Classical hematology medication
+35807265,Direct thrombin inhibitor,45148,35807480,35807265,35807480,46148,Classical hematology medication
+35807265,Direct thrombin inhibitor,45148,35807264,35807265,35807264,45147,Anticoagulant
+35807267,Enzyme,45155,912052,35807267,912052,16456,Cytotoxic chemotherapeutic
+35807267,Enzyme,45155,35807466,35807267,35807466,46112,Antineoplastics by class effect
+35807268,COX-1 inhibitor,45161,35807487,35807268,35807487,46164,Nonsteroidal anti-inflammatory drugs (NSAIDs)
+35807268,COX-1 inhibitor,45161,35807468,35807268,35807468,46116,Antiplatelet agent
+35807269,PDE inhibitor,45164,35807468,35807269,35807468,46116,Antiplatelet agent
+35807270,Anti-PD-L1 antibody,45170,912160,35807270,912160,58101,Immunostimulatory monoclonal antibody
+35807270,Anti-PD-L1 antibody,45170,35807189,35807270,35807189,44946,Immunotherapeutic
+35807270,Anti-PD-L1 antibody,45170,35807466,35807270,35807466,46112,Antineoplastics by class effect
+35807270,Anti-PD-L1 antibody,45170,35807190,35807270,35807190,44947,Antibody medication
+35807272,Hematopoietic growth factor,45175,905615,35807272,905615,20221,Growth factor
+35807273,Megakaryocyte growth factor,45176,905615,35807273,905615,20221,Growth factor
+35807273,Megakaryocyte growth factor,45176,35807272,35807273,35807272,45175,Hematopoietic growth factor
+35807274,Cellular therapy,45186,35807443,35807274,35807443,45998,Intervention index
+35807274,Cellular therapy,45186,35807189,35807274,35807189,44946,Immunotherapeutic
+35807274,Cellular therapy,45186,35807483,35807274,35807483,46156,Biologic product
+35807274,Cellular therapy,45186,35807466,35807274,35807466,46112,Antineoplastics by class effect
+35807275,PDGFR inhibitor,45194,912163,35807275,912163,58229,Targeted therapeutic
+35807275,PDGFR inhibitor,45194,912198,35807275,912198,59504,Tyrosine kinase inhibitor
+35807275,PDGFR inhibitor,45194,35807478,35807275,35807478,46140,Growth factor inhibitor
+35807275,PDGFR inhibitor,45194,35807197,35807275,35807197,44955,Kinase inhibitor
+35807275,PDGFR inhibitor,45194,35807466,35807275,35807466,46112,Antineoplastics by class effect
+35807277,Hypomethylating agent,45202,35807466,35807277,35807466,46112,Antineoplastics by class effect
+35807278,DNA methyltransferase inhibitor,45203,35807466,35807278,35807466,46112,Antineoplastics by class effect
+35807278,DNA methyltransferase inhibitor,45203,35807277,35807278,35807277,45202,Hypomethylating agent
+35807279,Pyrimidine analogue,45204,912052,35807279,912052,16456,Cytotoxic chemotherapeutic
+35807279,Pyrimidine analogue,45204,35807247,35807279,35807247,45081,Antimetabolite
+35807279,Pyrimidine analogue,45204,35807466,35807279,35807466,46112,Antineoplastics by class effect
+35807280,Anti-DKK1 antibody,45209,912007,35807280,912007,12278,Antineoplastic monoclonal antibody
+35807280,Anti-DKK1 antibody,45209,912163,35807280,912163,58229,Targeted therapeutic
+35807280,Anti-DKK1 antibody,45209,35807190,35807280,35807190,44947,Antibody medication
+35807280,Anti-DKK1 antibody,45209,35807466,35807280,35807466,46112,Antineoplastics by class effect
+35807281,Immunotoxin,45212,912052,35807281,912052,16456,Cytotoxic chemotherapeutic
+35807281,Immunotoxin,45212,912007,35807281,912007,12278,Antineoplastic monoclonal antibody
+35807281,Immunotoxin,45212,912163,35807281,912163,58229,Targeted therapeutic
+35807281,Immunotoxin,45212,35807190,35807281,35807190,44947,Antibody medication
+35807281,Immunotoxin,45212,35807466,35807281,35807466,46112,Antineoplastics by class effect
+35807282,Anti-CD22 antibody,45213,912163,35807282,912163,58229,Targeted therapeutic
+35807282,Anti-CD22 antibody,45213,912160,35807282,912160,58101,Immunostimulatory monoclonal antibody
+35807282,Anti-CD22 antibody,45213,912007,35807282,912007,12278,Antineoplastic monoclonal antibody
+35807282,Anti-CD22 antibody,45213,35807190,35807282,35807190,44947,Antibody medication
+35807282,Anti-CD22 antibody,45213,35807189,35807282,35807189,44946,Immunotherapeutic
+35807282,Anti-CD22 antibody,45213,35807466,35807282,35807466,46112,Antineoplastics by class effect
+35807285,Anti-PS antibody,45219,912160,35807285,912160,58101,Immunostimulatory monoclonal antibody
+35807285,Anti-PS antibody,45219,35807190,35807285,35807190,44947,Antibody medication
+35807285,Anti-PS antibody,45219,35807466,35807285,35807466,46112,Antineoplastics by class effect
+35807285,Anti-PS antibody,45219,35807189,35807285,35807189,44946,Immunotherapeutic
+35807286,Tumor vaccine,45221,35807443,35807286,35807443,45998,Intervention index
+35807286,Tumor vaccine,45221,35807483,35807286,35807483,46156,Biologic product
+35807287,KFDA approved drug,45227,35807474,35807287,35807474,46132,Approved drug
+35807288,Nitrogen mustard,45230,912052,35807288,912052,16456,Cytotoxic chemotherapeutic
+35807288,Nitrogen mustard,45230,35807238,35807288,35807238,45058,Alkylating agent
+35807288,Nitrogen mustard,45230,35807466,35807288,35807466,46112,Antineoplastics by class effect
+35807289,Anti-VEGFR antibody,45244,912007,35807289,912007,12278,Antineoplastic monoclonal antibody
+35807289,Anti-VEGFR antibody,45244,912163,35807289,912163,58229,Targeted therapeutic
+35807289,Anti-VEGFR antibody,45244,35807466,35807289,35807466,46112,Antineoplastics by class effect
+35807289,Anti-VEGFR antibody,45244,35807190,35807289,35807190,44947,Antibody medication
+35807291,MAP2K1 inhibitor,45271,912191,35807291,912191,59452,Serine-threonine kinase inhibitor
+35807291,MAP2K1 inhibitor,45271,912163,35807291,912163,58229,Targeted therapeutic
+35807291,MAP2K1 inhibitor,45271,35807428,35807291,35807428,45943,MEK inhibitor
+35807291,MAP2K1 inhibitor,45271,35807197,35807291,35807197,44955,Kinase inhibitor
+35807291,MAP2K1 inhibitor,45271,35807466,35807291,35807466,46112,Antineoplastics by class effect
+35807292,MAP2K2 inhibitor,45272,912163,35807292,912163,58229,Targeted therapeutic
+35807292,MAP2K2 inhibitor,45272,912191,35807292,912191,59452,Serine-threonine kinase inhibitor
+35807292,MAP2K2 inhibitor,45272,35807466,35807292,35807466,46112,Antineoplastics by class effect
+35807292,MAP2K2 inhibitor,45272,35807197,35807292,35807197,44955,Kinase inhibitor
+35807292,MAP2K2 inhibitor,45272,35807428,35807292,35807428,45943,MEK inhibitor
+35807294,Anti-CD19 antibody,45295,912007,35807294,912007,12278,Antineoplastic monoclonal antibody
+35807294,Anti-CD19 antibody,45295,912163,35807294,912163,58229,Targeted therapeutic
+35807294,Anti-CD19 antibody,45295,35807466,35807294,35807466,46112,Antineoplastics by class effect
+35807294,Anti-CD19 antibody,45295,35807190,35807294,35807190,44947,Antibody medication
+35807295,Proteasome inhibitor,45299,912163,35807295,912163,58229,Targeted therapeutic
+35807295,Proteasome inhibitor,45299,35807466,35807295,35807466,46112,Antineoplastics by class effect
+35807297,Bcr-Abl inhibitor,45312,912163,35807297,912163,58229,Targeted therapeutic
+35807297,Bcr-Abl inhibitor,45312,912198,35807297,912198,59504,Tyrosine kinase inhibitor
+35807297,Bcr-Abl inhibitor,45312,35807466,35807297,35807466,46112,Antineoplastics by class effect
+35807297,Bcr-Abl inhibitor,45312,35807197,35807297,35807197,44955,Kinase inhibitor
+35807298,Radiation,45316,35807443,35807298,35807443,45998,Intervention index
+35807299,Anti-CD30 antibody,45321,912163,35807299,912163,58229,Targeted therapeutic
+35807299,Anti-CD30 antibody,45321,912007,35807299,912007,12278,Antineoplastic monoclonal antibody
+35807299,Anti-CD30 antibody,45321,35807190,35807299,35807190,44947,Antibody medication
+35807299,Anti-CD30 antibody,45321,35807466,35807299,35807466,46112,Antineoplastics by class effect
+35807300,ROS1 inhibitor,45334,912198,35807300,912198,59504,Tyrosine kinase inhibitor
+35807300,ROS1 inhibitor,45334,912163,35807300,912163,58229,Targeted therapeutic
+35807300,ROS1 inhibitor,45334,35807197,35807300,35807197,44955,Kinase inhibitor
+35807300,ROS1 inhibitor,45334,35807466,35807300,35807466,46112,Antineoplastics by class effect
+35807301,IGFR inhibitor,45335,912198,35807301,912198,59504,Tyrosine kinase inhibitor
+35807301,IGFR inhibitor,45335,912163,35807301,912163,58229,Targeted therapeutic
+35807301,IGFR inhibitor,45335,35807478,35807301,35807478,46140,Growth factor inhibitor
+35807301,IGFR inhibitor,45335,35807466,35807301,35807466,46112,Antineoplastics by class effect
+35807301,IGFR inhibitor,45335,35807197,35807301,35807197,44955,Kinase inhibitor
+35807302,FLT3 inhibitor,45336,912198,35807302,912198,59504,Tyrosine kinase inhibitor
+35807302,FLT3 inhibitor,45336,912163,35807302,912163,58229,Targeted therapeutic
+35807302,FLT3 inhibitor,45336,35807466,35807302,35807466,46112,Antineoplastics by class effect
+35807302,FLT3 inhibitor,45336,35807197,35807302,35807197,44955,Kinase inhibitor
+35807303,PI3K inhibitor,45340,912163,35807303,912163,58229,Targeted therapeutic
+35807303,PI3K inhibitor,45340,35807466,35807303,35807466,46112,Antineoplastics by class effect
+35807303,PI3K inhibitor,45340,35807197,35807303,35807197,44955,Kinase inhibitor
+35807304,Taxane,45352,912052,35807304,912052,16456,Cytotoxic chemotherapeutic
+35807304,Taxane,45352,35807466,35807304,35807466,46112,Antineoplastics by class effect
+35807304,Taxane,45352,35807223,35807304,35807223,45002,Microtubule inhibitor
+35807305,AXL inhibitor,45355,912198,35807305,912198,59504,Tyrosine kinase inhibitor
+35807305,AXL inhibitor,45355,912163,35807305,912163,58229,Targeted therapeutic
+35807305,AXL inhibitor,45355,35807197,35807305,35807197,44955,Kinase inhibitor
+35807305,AXL inhibitor,45355,35807466,35807305,35807466,46112,Antineoplastics by class effect
+35807306,MET inhibitor,45358,912198,35807306,912198,59504,Tyrosine kinase inhibitor
+35807306,MET inhibitor,45358,912163,35807306,912163,58229,Targeted therapeutic
+35807306,MET inhibitor,45358,35807466,35807306,35807466,46112,Antineoplastics by class effect
+35807306,MET inhibitor,45358,35807197,35807306,35807197,44955,Kinase inhibitor
+35807306,MET inhibitor,45358,35807478,35807306,35807478,46140,Growth factor inhibitor
+35807307,RET inhibitor,45359,912198,35807307,912198,59504,Tyrosine kinase inhibitor
+35807307,RET inhibitor,45359,912163,35807307,912163,58229,Targeted therapeutic
+35807307,RET inhibitor,45359,35807466,35807307,35807466,46112,Antineoplastics by class effect
+35807307,RET inhibitor,45359,35807197,35807307,35807197,44955,Kinase inhibitor
+35807308,TEK inhibitor,45361,912198,35807308,912198,59504,Tyrosine kinase inhibitor
+35807308,TEK inhibitor,45361,912163,35807308,912163,58229,Targeted therapeutic
+35807308,TEK inhibitor,45361,35807466,35807308,35807466,46112,Antineoplastics by class effect
+35807308,TEK inhibitor,45361,35807197,35807308,35807197,44955,Kinase inhibitor
+35807309,TRK inhibitor,45362,912198,35807309,912198,59504,Tyrosine kinase inhibitor
+35807309,TRK inhibitor,45362,912163,35807309,912163,58229,Targeted therapeutic
+35807309,TRK inhibitor,45362,35807466,35807309,35807466,46112,Antineoplastics by class effect
+35807309,TRK inhibitor,45362,35807197,35807309,35807197,44955,Kinase inhibitor
+35807310,Pegylated medication,45363,35807491,35807310,35807491,46178,Drugs by vehicle
+35807312,P2Y12 ADP inhibitor,45367,35807468,35807312,35807468,46116,Antiplatelet agent
+35807313,Fluoropyrimidine,45369,912052,35807313,912052,16456,Cytotoxic chemotherapeutic
+35807313,Fluoropyrimidine,45369,35807279,35807313,35807279,45204,Pyrimidine analogue
+35807313,Fluoropyrimidine,45369,35807466,35807313,35807466,46112,Antineoplastics by class effect
+35807313,Fluoropyrimidine,45369,35807247,35807313,35807247,45081,Antimetabolite
+35807314,Anti-vWF medication,45384,912087,35807314,912087,22790,Hematologic monoclonal antibody
+35807314,Anti-vWF medication,45384,35807190,35807314,35807190,44947,Antibody medication
+35807315,Platinum agent,45388,912052,35807315,912052,16456,Cytotoxic chemotherapeutic
+35807315,Platinum agent,45388,35807466,35807315,35807466,46112,Antineoplastics by class effect
+35807317,Nitrosourea,45414,912052,35807317,912052,16456,Cytotoxic chemotherapeutic
+35807317,Nitrosourea,45414,35807238,35807317,35807238,45058,Alkylating agent
+35807317,Nitrosourea,45414,35807466,35807317,35807466,46112,Antineoplastics by class effect
+35807319,Antifungal,45432,35807476,35807319,35807476,46136,Antibiotic
+35807320,Anti-EpCAM antibody,45439,912160,35807320,912160,58101,Immunostimulatory monoclonal antibody
+35807320,Anti-EpCAM antibody,45439,35807189,35807320,35807189,44946,Immunotherapeutic
+35807320,Anti-EpCAM antibody,45439,35807466,35807320,35807466,46112,Antineoplastics by class effect
+35807320,Anti-EpCAM antibody,45439,35807190,35807320,35807190,44947,Antibody medication
+35807321,EMA approved drug,45441,35807474,35807321,35807474,46132,Approved drug
+35807322,Anti-PD-1 antibody,45446,912160,35807322,912160,58101,Immunostimulatory monoclonal antibody
+35807322,Anti-PD-1 antibody,45446,35807466,35807322,35807466,46112,Antineoplastics by class effect
+35807322,Anti-PD-1 antibody,45446,35807189,35807322,35807189,44946,Immunotherapeutic
+35807322,Anti-PD-1 antibody,45446,35807190,35807322,35807190,44947,Antibody medication
+35807324,Anti-EGFR antibody,45453,912198,35807324,912198,59504,Tyrosine kinase inhibitor
+35807324,Anti-EGFR antibody,45453,912163,35807324,912163,58229,Targeted therapeutic
+35807324,Anti-EGFR antibody,45453,912007,35807324,912007,12278,Antineoplastic monoclonal antibody
+35807324,Anti-EGFR antibody,45453,35807190,35807324,35807190,44947,Antibody medication
+35807324,Anti-EGFR antibody,45453,35807197,35807324,35807197,44955,Kinase inhibitor
+35807324,Anti-EGFR antibody,45453,35807478,35807324,35807478,46140,Growth factor inhibitor
+35807324,Anti-EGFR antibody,45453,35807466,35807324,35807466,46112,Antineoplastics by class effect
+35807324,Anti-EGFR antibody,45453,35807225,35807324,35807225,45006,EGFR inhibitor
+35807325,H2-receptor antagonist,45455,35807323,35807325,35807323,45448,Antihistamine
+35807326,Anti-IGF-1R antibody,45501,912007,35807326,912007,12278,Antineoplastic monoclonal antibody
+35807326,Anti-IGF-1R antibody,45501,912163,35807326,912163,58229,Targeted therapeutic
+35807326,Anti-IGF-1R antibody,45501,35807466,35807326,35807466,46112,Antineoplastics by class effect
+35807326,Anti-IGF-1R antibody,45501,35807190,35807326,35807190,44947,Antibody medication
+35807327,Purine analogue,45507,912052,35807327,912052,16456,Cytotoxic chemotherapeutic
+35807327,Purine analogue,45507,35807247,35807327,35807247,45081,Antimetabolite
+35807327,Purine analogue,45507,35807466,35807327,35807466,46112,Antineoplastics by class effect
+35807328,Antibacterial,45517,35807476,35807328,35807476,46136,Antibiotic
+35807329,PI3K alpha inhibitor,45520,912163,35807329,912163,58229,Targeted therapeutic
+35807329,PI3K alpha inhibitor,45520,35807303,35807329,35807303,45340,PI3K inhibitor
+35807329,PI3K alpha inhibitor,45520,35807466,35807329,35807466,46112,Antineoplastics by class effect
+35807329,PI3K alpha inhibitor,45520,35807197,35807329,35807197,44955,Kinase inhibitor
+35807330,PI3K delta inhibitor,45521,912163,35807330,912163,58229,Targeted therapeutic
+35807330,PI3K delta inhibitor,45521,35807466,35807330,35807466,46112,Antineoplastics by class effect
+35807330,PI3K delta inhibitor,45521,35807303,35807330,35807303,45340,PI3K inhibitor
+35807330,PI3K delta inhibitor,45521,35807197,35807330,35807197,44955,Kinase inhibitor
+35807331,Steroid,45523,912052,35807331,912052,16456,Cytotoxic chemotherapeutic
+35807331,Steroid,45523,35807335,35807331,35807335,45538,Immunosuppressant
+35807331,Steroid,45523,35807466,35807331,35807466,46112,Antineoplastics by class effect
+35807331,Steroid,45523,35807205,35807331,35807205,44970,Endocrine therapeutic
+35807331,Steroid,45523,35803694,35807331,35803694,3422,Emesis prevention
+35807332,Anti-P-selectin antibody,45526,912163,35807332,912163,58229,Targeted therapeutic
+35807332,Anti-P-selectin antibody,45526,912007,35807332,912007,12278,Antineoplastic monoclonal antibody
+35807332,Anti-P-selectin antibody,45526,35807466,35807332,35807466,46112,Antineoplastics by class effect
+35807332,Anti-P-selectin antibody,45526,35807190,35807332,35807190,44947,Antibody medication
+35807333,Clusterin inhibitor,45528,912163,35807333,912163,58229,Targeted therapeutic
+35807333,Clusterin inhibitor,45528,35807466,35807333,35807466,46112,Antineoplastics by class effect
+35807333,Clusterin inhibitor,45528,35807494,35807333,35807494,46184,Molecular chaperone inhibitor
+35807337,Calcineurin inhibitor,45570,35807335,35807337,35807335,45538,Immunosuppressant
+35807339,Deoxycytidine analogue,45580,912052,35807339,912052,16456,Cytotoxic chemotherapeutic
+35807339,Deoxycytidine analogue,45580,35807247,35807339,35807247,45081,Antimetabolite
+35807339,Deoxycytidine analogue,45580,35807466,35807339,35807466,46112,Antineoplastics by class effect
+35807340,Liposomal chemotherapy,45582,35807491,35807340,35807491,46178,Drugs by vehicle
+35807341,BRAF inhibitor,45592,912163,35807341,912163,58229,Targeted therapeutic
+35807341,BRAF inhibitor,45592,912191,35807341,912191,59452,Serine-threonine kinase inhibitor
+35807341,BRAF inhibitor,45592,35807197,35807341,35807197,44955,Kinase inhibitor
+35807341,BRAF inhibitor,45592,35807466,35807341,35807466,46112,Antineoplastics by class effect
+35807342,Triazene,45597,912052,35807342,912052,16456,Cytotoxic chemotherapeutic
+35807342,Triazene,45597,35807238,35807342,35807238,45058,Alkylating agent
+35807342,Triazene,45597,35807466,35807342,35807466,46112,Antineoplastics by class effect
+35807343,Heparin,45609,35807264,35807343,35807264,45147,Anticoagulant
+35807343,Heparin,45609,35807480,35807343,35807480,46148,Classical hematology medication
+35807344,Low molecular weight heparin,45610,35807480,35807344,35807480,46148,Classical hematology medication
+35807344,Low molecular weight heparin,45610,35807264,35807344,35807264,45147,Anticoagulant
+35807345,Anti-CD38 antibody,45613,912163,35807345,912163,58229,Targeted therapeutic
+35807345,Anti-CD38 antibody,45613,912007,35807345,912007,12278,Antineoplastic monoclonal antibody
+35807345,Anti-CD38 antibody,45613,35807466,35807345,35807466,46112,Antineoplastics by class effect
+35807345,Anti-CD38 antibody,45613,35807190,35807345,35807190,44947,Antibody medication
+35807346,Erythrocyte growth factor,45617,905615,35807346,905615,20221,Growth factor
+35807346,Erythrocyte growth factor,45617,35807272,35807346,35807272,45175,Hematopoietic growth factor
+35807347,SYK inhibitor,45626,912198,35807347,912198,59504,Tyrosine kinase inhibitor
+35807347,SYK inhibitor,45626,912163,35807347,912163,58229,Targeted therapeutic
+35807347,SYK inhibitor,45626,35807197,35807347,35807197,44955,Kinase inhibitor
+35807347,SYK inhibitor,45626,35807466,35807347,35807466,46112,Antineoplastics by class effect
+35807348,Chelator,45629,35807480,35807348,35807480,46148,Classical hematology medication
+35807349,GnRH antagonist,45632,35807205,35807349,35807205,44970,Endocrine therapeutic
+35807349,GnRH antagonist,45632,35807466,35807349,35807466,46112,Antineoplastics by class effect
+35807350,Anti-RANKL antibody,45635,912007,35807350,912007,12278,Antineoplastic monoclonal antibody
+35807350,Anti-RANKL antibody,45635,912163,35807350,912163,58229,Targeted therapeutic
+35807350,Anti-RANKL antibody,45635,35807466,35807350,35807466,46112,Antineoplastics by class effect
+35807350,Anti-RANKL antibody,45635,35807190,35807350,35807190,44947,Antibody medication
+35807351,RANK ligand inhibitor,45636,35807481,35807351,35807481,46152,Bone protective medication
+35807352,Vasopressin analog,45644,35807480,35807352,35807480,46148,Classical hematology medication
+35807353,Anti-GD2 antibody,45666,912007,35807353,912007,12278,Antineoplastic monoclonal antibody
+35807353,Anti-GD2 antibody,45666,912163,35807353,912163,58229,Targeted therapeutic
+35807353,Anti-GD2 antibody,45666,35807466,35807353,35807466,46112,Antineoplastics by class effect
+35807353,Anti-GD2 antibody,45666,35807190,35807353,35807190,44947,Antibody medication
+35807354,Laxative,45668,35807495,35807354,35807495,46186,Bowel management
+35807355,Serotonin 5-HT3 antagonist,45672,35803694,35807355,35803694,3422,Emesis prevention
+35807356,Dopamine receptor antagonist,45678,35803694,35807356,35803694,3422,Emesis prevention
+35807357,Phenothiazine,45679,35803694,35807357,35803694,3422,Emesis prevention
+35807358,FGFR inhibitor,45683,912198,35807358,912198,59504,Tyrosine kinase inhibitor
+35807358,FGFR inhibitor,45683,912163,35807358,912163,58229,Targeted therapeutic
+35807358,FGFR inhibitor,45683,35807197,35807358,35807197,44955,Kinase inhibitor
+35807358,FGFR inhibitor,45683,35807466,35807358,35807466,46112,Antineoplastics by class effect
+35807358,FGFR inhibitor,45683,35807478,35807358,35807478,46140,Growth factor inhibitor
+35807359,Cannabinoid,45687,35807408,35807359,35807408,45875,Appetite stimulant
+35807359,Cannabinoid,45687,35803694,35807359,35803694,3422,Emesis prevention
+35807360,5 alpha-reductase inhibitor,45691,35807205,35807360,35807205,44970,Endocrine therapeutic
+35807360,5 alpha-reductase inhibitor,45691,35807466,35807360,35807466,46112,Antineoplastics by class effect
+35807361,PI3K gamma inhibitor,45695,912163,35807361,912163,58229,Targeted therapeutic
+35807361,PI3K gamma inhibitor,45695,35807466,35807361,35807466,46112,Antineoplastics by class effect
+35807361,PI3K gamma inhibitor,45695,35807303,35807361,35807303,45340,PI3K inhibitor
+35807361,PI3K gamma inhibitor,45695,35807197,35807361,35807197,44955,Kinase inhibitor
+35807362,Anti-C5 antibody,45698,912161,35807362,912161,58102,Immunosuppressive monoclonal antibody
+35807362,Anti-C5 antibody,45698,35807335,35807362,35807335,45538,Immunosuppressant
+35807362,Anti-C5 antibody,45698,35807190,35807362,35807190,44947,Antibody medication
+35807363,Anti-SLAMF7 antibody,45705,912007,35807363,912007,12278,Antineoplastic monoclonal antibody
+35807363,Anti-SLAMF7 antibody,45705,912163,35807363,912163,58229,Targeted therapeutic
+35807363,Anti-SLAMF7 antibody,45705,35807190,35807363,35807190,44947,Antibody medication
+35807363,Anti-SLAMF7 antibody,45705,35807466,35807363,35807466,46112,Antineoplastics by class effect
+35807364,Bispecific antibody medication,45707,35807190,35807364,35807190,44947,Antibody medication
+35807365,Anti-Factor IXa antibody,45708,912087,35807365,912087,22790,Hematologic monoclonal antibody
+35807365,Anti-Factor IXa antibody,45708,35807190,35807365,35807190,44947,Antibody medication
+35807366,Anti-Factor Xa antibody,45709,912087,35807366,912087,22790,Hematologic monoclonal antibody
+35807366,Anti-Factor Xa antibody,45709,35807190,35807366,35807190,44947,Antibody medication
+35807367,IDH2 inhibitor,45713,912163,35807367,912163,58229,Targeted therapeutic
+35807367,IDH2 inhibitor,45713,35807466,35807367,35807466,46112,Antineoplastics by class effect
+35807367,IDH2 inhibitor,45713,35807471,35807367,35807471,46122,Enzyme inhibitor
+35807369,MTOR inhibitor,45725,912191,35807369,912191,59452,Serine-threonine kinase inhibitor
+35807369,MTOR inhibitor,45725,912163,35807369,912163,58229,Targeted therapeutic
+35807369,MTOR inhibitor,45725,35807466,35807369,35807466,46112,Antineoplastics by class effect
+35807369,MTOR inhibitor,45725,35807335,35807369,35807335,45538,Immunosuppressant
+35807369,MTOR inhibitor,45725,35807197,35807369,35807197,44955,Kinase inhibitor
+35807370,TSC1 inhibitor,45726,912163,35807370,912163,58229,Targeted therapeutic
+35807370,TSC1 inhibitor,45726,35807496,35807370,35807496,46188,GTPase-activating protein inhibitor
+35807370,TSC1 inhibitor,45726,35807466,35807370,35807466,46112,Antineoplastics by class effect
+35807371,TSC2 inhibitor,45727,912163,35807371,912163,58229,Targeted therapeutic
+35807371,TSC2 inhibitor,45727,35807466,35807371,35807466,46112,Antineoplastics by class effect
+35807372,Iron,45730,35807480,35807372,35807480,46148,Classical hematology medication
+35807373,KSP inhibitor,45732,912052,35807373,912052,16456,Cytotoxic chemotherapeutic
+35807373,KSP inhibitor,45732,35807466,35807373,35807466,46112,Antineoplastics by class effect
+35807373,KSP inhibitor,45732,35807223,35807373,35807223,45002,Microtubule inhibitor
+35807374,Granulocyte colony-stimulating factor,45734,905615,35807374,905615,20221,Growth factor
+35807374,Granulocyte colony-stimulating factor,45734,35807497,35807374,35807497,46190,Granulocyte growth factor
+35807374,Granulocyte colony-stimulating factor,45734,35807272,35807374,35807272,45175,Hematopoietic growth factor
+35807375,WHO Essential Anti-infective Medicine,45738,35807475,35807375,35807475,46134,WHO Essential Medicine
+35807376,Anabolic steroid,45740,35807205,35807376,35807205,44970,Endocrine therapeutic
+35807376,Anabolic steroid,45740,35807466,35807376,35807466,46112,Antineoplastics by class effect
+35807377,Purine nucleoside phosphorylase (PNP) inhibitor,45742,912163,35807377,912163,58229,Targeted therapeutic
+35807377,Purine nucleoside phosphorylase (PNP) inhibitor,45742,35807466,35807377,35807466,46112,Antineoplastics by class effect
+35807377,Purine nucleoside phosphorylase (PNP) inhibitor,45742,35807471,35807377,35807471,46122,Enzyme inhibitor
+35807379,Estrogen receptor inhibitor,45748,911924,35807379,911924,918,Antiestrogen
+35807379,Estrogen receptor inhibitor,45748,35807466,35807379,35807466,46112,Antineoplastics by class effect
+35807379,Estrogen receptor inhibitor,45748,35807205,35807379,35807205,44970,Endocrine therapeutic
+35807381,Steroidal androgen receptor inhibitor,45755,35807466,35807381,35807466,46112,Antineoplastics by class effect
+35807381,Steroidal androgen receptor inhibitor,45755,35807205,35807381,35807205,44970,Endocrine therapeutic
+35807381,Steroidal androgen receptor inhibitor,45755,35807500,35807381,35807500,46196,Androgen receptor inhibitor
+35807382,Hsp90 inhibitor,45758,912163,35807382,912163,58229,Targeted therapeutic
+35807382,Hsp90 inhibitor,45758,35807494,35807382,35807494,46184,Molecular chaperone inhibitor
+35807382,Hsp90 inhibitor,45758,35807466,35807382,35807466,46112,Antineoplastics by class effect
+35807383,Enediyne antibiotic,45764,912052,35807383,912052,16456,Cytotoxic chemotherapeutic
+35807383,Enediyne antibiotic,45764,35807466,35807383,35807466,46112,Antineoplastics by class effect
+35807384,Hedgehog pathway inhibitor,45766,912163,35807384,912163,58229,Targeted therapeutic
+35807384,Hedgehog pathway inhibitor,45766,35807466,35807384,35807466,46112,Antineoplastics by class effect
+35807385,GnRH agonist,45768,35807466,35807385,35807466,46112,Antineoplastics by class effect
+35807385,GnRH agonist,45768,35807205,35807385,35807205,44970,Endocrine therapeutic
+35807386,Antipsychotic,45772,35803694,35807386,35803694,3422,Emesis prevention
+35807387,Anti-CD47 antibody,45775,912163,35807387,912163,58229,Targeted therapeutic
+35807387,Anti-CD47 antibody,45775,912007,35807387,912007,12278,Antineoplastic monoclonal antibody
+35807387,Anti-CD47 antibody,45775,912160,35807387,912160,58101,Immunostimulatory monoclonal antibody
+35807387,Anti-CD47 antibody,45775,35807466,35807387,35807466,46112,Antineoplastics by class effect
+35807387,Anti-CD47 antibody,45775,35807189,35807387,35807189,44946,Immunotherapeutic
+35807387,Anti-CD47 antibody,45775,35807190,35807387,35807190,44947,Antibody medication
+35807388,Anti-KIR antibody,45792,912160,35807388,912160,58101,Immunostimulatory monoclonal antibody
+35807388,Anti-KIR antibody,45792,35807466,35807388,35807466,46112,Antineoplastics by class effect
+35807388,Anti-KIR antibody,45792,35807189,35807388,35807189,44946,Immunotherapeutic
+35807388,Anti-KIR antibody,45792,35807190,35807388,35807190,44947,Antibody medication
+35807389,Anti-CD20 antibody,45797,912007,35807389,912007,12278,Antineoplastic monoclonal antibody
+35807389,Anti-CD20 antibody,45797,912161,35807389,912161,58102,Immunosuppressive monoclonal antibody
+35807389,Anti-CD20 antibody,45797,912163,35807389,912163,58229,Targeted therapeutic
+35807389,Anti-CD20 antibody,45797,35807466,35807389,35807466,46112,Antineoplastics by class effect
+35807389,Anti-CD20 antibody,45797,35807335,35807389,35807335,45538,Immunosuppressant
+35807389,Anti-CD20 antibody,45797,35807190,35807389,35807190,44947,Antibody medication
+35807391,Radioimmunoconjugate,45799,912163,35807391,912163,58229,Targeted therapeutic
+35807391,Radioimmunoconjugate,45799,905737,35807391,905737,61256,Radioconjugate
+35807391,Radioimmunoconjugate,45799,912007,35807391,912007,12278,Antineoplastic monoclonal antibody
+35807391,Radioimmunoconjugate,45799,912161,35807391,912161,58102,Immunosuppressive monoclonal antibody
+35807391,Radioimmunoconjugate,45799,35807190,35807391,35807190,44947,Antibody medication
+35807391,Radioimmunoconjugate,45799,35807443,35807391,35807443,45998,Intervention index
+35807391,Radioimmunoconjugate,45799,35807466,35807391,35807466,46112,Antineoplastics by class effect
+35807391,Radioimmunoconjugate,45799,35807298,35807391,35807298,45316,Radiation
+35807391,Radioimmunoconjugate,45799,35807335,35807391,35807335,45538,Immunosuppressant
+35807391,Radioimmunoconjugate,45799,35807217,35807391,35807217,44991,Radiotherapy medication
+35807392,ITK inhibitor,45805,912163,35807392,912163,58229,Targeted therapeutic
+35807392,ITK inhibitor,45805,912198,35807392,912198,59504,Tyrosine kinase inhibitor
+35807392,ITK inhibitor,45805,35807466,35807392,35807466,46112,Antineoplastics by class effect
+35807392,ITK inhibitor,45805,35807197,35807392,35807197,44955,Kinase inhibitor
+35807393,TEC inhibitor,45806,912163,35807393,912163,58229,Targeted therapeutic
+35807393,TEC inhibitor,45806,912198,35807393,912198,59504,Tyrosine kinase inhibitor
+35807393,TEC inhibitor,45806,35807197,35807393,35807197,44955,Kinase inhibitor
+35807393,TEC inhibitor,45806,35807466,35807393,35807466,46112,Antineoplastics by class effect
+35807394,TXK inhibitor,45807,912163,35807394,912163,58229,Targeted therapeutic
+35807394,TXK inhibitor,45807,912198,35807394,912198,59504,Tyrosine kinase inhibitor
+35807394,TXK inhibitor,45807,35807466,35807394,35807466,46112,Antineoplastics by class effect
+35807394,TXK inhibitor,45807,35807197,35807394,35807197,44955,Kinase inhibitor
+35807395,Telomerase inhibitor,45825,912163,35807395,912163,58229,Targeted therapeutic
+35807395,Telomerase inhibitor,45825,35807466,35807395,35807466,46112,Antineoplastics by class effect
+35807395,Telomerase inhibitor,45825,35807471,35807395,35807471,46122,Enzyme inhibitor
+35807396,COX-2 inhibitor,45831,35807487,35807396,35807487,46164,Nonsteroidal anti-inflammatory drugs (NSAIDs)
+35807397,Interferon,45833,35807228,35807397,35807228,45017,Cytokine
+35807397,Interferon,45833,35807189,35807397,35807189,44946,Immunotherapeutic
+35807397,Interferon,45833,35807466,35807397,35807466,46112,Antineoplastics by class effect
+35807398,Anti-CTLA-4 antibody,45838,912160,35807398,912160,58101,Immunostimulatory monoclonal antibody
+35807398,Anti-CTLA-4 antibody,45838,35807189,35807398,35807189,44946,Immunotherapeutic
+35807398,Anti-CTLA-4 antibody,45838,35807190,35807398,35807190,44947,Antibody medication
+35807398,Anti-CTLA-4 antibody,45838,35807466,35807398,35807466,46112,Antineoplastics by class effect
+35807399,IDH1 inhibitor,45840,912163,35807399,912163,58229,Targeted therapeutic
+35807399,IDH1 inhibitor,45840,35807466,35807399,35807466,46112,Antineoplastics by class effect
+35807399,IDH1 inhibitor,45840,35807471,35807399,35807471,46122,Enzyme inhibitor
+35807400,Somatostatin analog,45843,35807466,35807400,35807466,46112,Antineoplastics by class effect
+35807400,Somatostatin analog,45843,35807205,35807400,35807205,44970,Endocrine therapeutic
+35807403,Immunomodulatory drugs (IMiDs),45857,35807466,35807403,35807466,46112,Antineoplastics by class effect
+35807403,Immunomodulatory drugs (IMiDs),45857,35807189,35807403,35807189,44946,Immunotherapeutic
+35807404,JAK inhibitor,45861,912198,35807404,912198,59504,Tyrosine kinase inhibitor
+35807404,JAK inhibitor,45861,912163,35807404,912163,58229,Targeted therapeutic
+35807404,JAK inhibitor,45861,35807197,35807404,35807197,44955,Kinase inhibitor
+35807404,JAK inhibitor,45861,35807466,35807404,35807466,46112,Antineoplastics by class effect
+35807405,Anti-diarrheal,45863,35807495,35807405,35807495,46186,Bowel management
+35807406,Anti-TRAIL-R1 antibody,45865,912163,35807406,912163,58229,Targeted therapeutic
+35807406,Anti-TRAIL-R1 antibody,45865,912007,35807406,912007,12278,Antineoplastic monoclonal antibody
+35807406,Anti-TRAIL-R1 antibody,45865,35807466,35807406,35807466,46112,Antineoplastics by class effect
+35807406,Anti-TRAIL-R1 antibody,45865,35807190,35807406,35807190,44947,Antibody medication
+35807407,PTK2 inhibitor,45872,912198,35807407,912198,59504,Tyrosine kinase inhibitor
+35807407,PTK2 inhibitor,45872,912163,35807407,912163,58229,Targeted therapeutic
+35807407,PTK2 inhibitor,45872,35807197,35807407,35807197,44955,Kinase inhibitor
+35807407,PTK2 inhibitor,45872,35807466,35807407,35807466,46112,Antineoplastics by class effect
+35807409,Anti-IL-5 antibody,45878,912161,35807409,912161,58102,Immunosuppressive monoclonal antibody
+35807409,Anti-IL-5 antibody,45878,35807335,35807409,35807335,45538,Immunosuppressant
+35807409,Anti-IL-5 antibody,45878,35807190,35807409,35807190,44947,Antibody medication
+35807410,Anti-CCR4 antibody,45881,912007,35807410,912007,12278,Antineoplastic monoclonal antibody
+35807410,Anti-CCR4 antibody,45881,912163,35807410,912163,58229,Targeted therapeutic
+35807410,Anti-CCR4 antibody,45881,912161,35807410,912161,58102,Immunosuppressive monoclonal antibody
+35807410,Anti-CCR4 antibody,45881,35807466,35807410,35807466,46112,Antineoplastics by class effect
+35807410,Anti-CCR4 antibody,45881,35807335,35807410,35807335,45538,Immunosuppressant
+35807410,Anti-CCR4 antibody,45881,35807190,35807410,35807190,44947,Antibody medication
+35807411,Anti-CD194 antibody,45882,912163,35807411,912163,58229,Targeted therapeutic
+35807411,Anti-CD194 antibody,45882,912007,35807411,912007,12278,Antineoplastic monoclonal antibody
+35807411,Anti-CD194 antibody,45882,35807466,35807411,35807466,46112,Antineoplastics by class effect
+35807411,Anti-CD194 antibody,45882,35807190,35807411,35807190,44947,Antibody medication
+35807413,Anti-amyloid antibody,45886,35807190,35807413,35807190,44947,Antibody medication
+35807414,ERBB3 inhibitor,45892,912163,35807414,912163,58229,Targeted therapeutic
+35807414,ERBB3 inhibitor,45892,912198,35807414,912198,59504,Tyrosine kinase inhibitor
+35807414,ERBB3 inhibitor,45892,35807478,35807414,35807478,46140,Growth factor inhibitor
+35807414,ERBB3 inhibitor,45892,35807466,35807414,35807466,46112,Antineoplastics by class effect
+35807414,ERBB3 inhibitor,45892,35807197,35807414,35807197,44955,Kinase inhibitor
+35807415,ERBB2 (HER2) medication,45895,35807489,35807415,35807489,46170,Site-agnostic medication
+35807416,ERBB3 (HER3) medication,45896,35807489,35807416,35807489,46170,Site-agnostic medication
+35807417,CSF1R inhibitor,45901,912198,35807417,912198,59504,Tyrosine kinase inhibitor
+35807417,CSF1R inhibitor,45901,912163,35807417,912163,58229,Targeted therapeutic
+35807417,CSF1R inhibitor,45901,35807466,35807417,35807466,46112,Antineoplastics by class effect
+35807417,CSF1R inhibitor,45901,35807197,35807417,35807197,44955,Kinase inhibitor
+35807417,CSF1R inhibitor,45901,35807478,35807417,35807478,46140,Growth factor inhibitor
+35807418,DDR inhibitor,45902,912163,35807418,912163,58229,Targeted therapeutic
+35807418,DDR inhibitor,45902,912198,35807418,912198,59504,Tyrosine kinase inhibitor
+35807418,DDR inhibitor,45902,35807466,35807418,35807466,46112,Antineoplastics by class effect
+35807418,DDR inhibitor,45902,35807197,35807418,35807197,44955,Kinase inhibitor
+35807419,PARP inhibitor,45904,912163,35807419,912163,58229,Targeted therapeutic
+35807419,PARP inhibitor,45904,35807466,35807419,35807466,46112,Antineoplastics by class effect
+35807419,PARP inhibitor,45904,35807471,35807419,35807471,46122,Enzyme inhibitor
+35807421,Anti-PDGFR antibody,45908,912198,35807421,912198,59504,Tyrosine kinase inhibitor
+35807421,Anti-PDGFR antibody,45908,912163,35807421,912163,58229,Targeted therapeutic
+35807421,Anti-PDGFR antibody,45908,912007,35807421,912007,12278,Antineoplastic monoclonal antibody
+35807421,Anti-PDGFR antibody,45908,35807197,35807421,35807197,44955,Kinase inhibitor
+35807421,Anti-PDGFR antibody,45908,35807190,35807421,35807190,44947,Antibody medication
+35807421,Anti-PDGFR antibody,45908,35807478,35807421,35807478,46140,Growth factor inhibitor
+35807421,Anti-PDGFR antibody,45908,35807275,35807421,35807275,45194,PDGFR inhibitor
+35807421,Anti-PDGFR antibody,45908,35807466,35807421,35807466,46112,Antineoplastics by class effect
+35807422,Cephalotaxine,45911,912052,35807422,912052,16456,Cytotoxic chemotherapeutic
+35807422,Cephalotaxine,45911,35807466,35807422,35807466,46112,Antineoplastics by class effect
+35807423,Anti-c-Met antibody,45915,912163,35807423,912163,58229,Targeted therapeutic
+35807423,Anti-c-Met antibody,45915,912007,35807423,912007,12278,Antineoplastic monoclonal antibody
+35807423,Anti-c-Met antibody,45915,35807190,35807423,35807190,44947,Antibody medication
+35807423,Anti-c-Met antibody,45915,35807466,35807423,35807466,46112,Antineoplastics by class effect
+35807424,Anti-CD37 antibody,45919,912007,35807424,912007,12278,Antineoplastic monoclonal antibody
+35807424,Anti-CD37 antibody,45919,912163,35807424,912163,58229,Targeted therapeutic
+35807424,Anti-CD37 antibody,45919,35807466,35807424,35807466,46112,Antineoplastics by class effect
+35807424,Anti-CD37 antibody,45919,35807190,35807424,35807190,44947,Antibody medication
+35807425,Nanoparticle albumin bound chemotherapy,45922,35807491,35807425,35807491,46178,Drugs by vehicle
+35807428,MEK inhibitor,45943,912163,35807428,912163,58229,Targeted therapeutic
+35807428,MEK inhibitor,45943,912191,35807428,912191,59452,Serine-threonine kinase inhibitor
+35807428,MEK inhibitor,45943,35807197,35807428,35807197,44955,Kinase inhibitor
+35807428,MEK inhibitor,45943,35807466,35807428,35807466,46112,Antineoplastics by class effect
+35807431,Alpha emitter,45964,35807298,35807431,35807298,45316,Radiation
+35807431,Alpha emitter,45964,35807443,35807431,35807443,45998,Intervention index
+35807431,Alpha emitter,45964,35807217,35807431,35807217,44991,Radiotherapy medication
+35807432,Selective estrogen receptor modulator,45966,911924,35807432,911924,918,Antiestrogen
+35807432,Selective estrogen receptor modulator,45966,35807205,35807432,35807205,44970,Endocrine therapeutic
+35807432,Selective estrogen receptor modulator,45966,35807466,35807432,35807466,46112,Antineoplastics by class effect
+35807434,Anti-HGF antibody,45973,912007,35807434,912007,12278,Antineoplastic monoclonal antibody
+35807434,Anti-HGF antibody,45973,912163,35807434,912163,58229,Targeted therapeutic
+35807434,Anti-HGF antibody,45973,35807190,35807434,35807190,44947,Antibody medication
+35807434,Anti-HGF antibody,45973,35807466,35807434,35807466,46112,Antineoplastics by class effect
+35807435,Anti-TACSTD2 antibody,45977,912007,35807435,912007,12278,Antineoplastic monoclonal antibody
+35807435,Anti-TACSTD2 antibody,45977,912163,35807435,912163,58229,Targeted therapeutic
+35807435,Anti-TACSTD2 antibody,45977,35807466,35807435,35807466,46112,Antineoplastics by class effect
+35807435,Anti-TACSTD2 antibody,45977,35807190,35807435,35807190,44947,Antibody medication
+35807436,Granulocyte macrophage colony-stimulating factor,45980,905615,35807436,905615,20221,Growth factor
+35807436,Granulocyte macrophage colony-stimulating factor,45980,35807272,35807436,35807272,45175,Hematopoietic growth factor
+35807436,Granulocyte macrophage colony-stimulating factor,45980,35807497,35807436,35807497,46190,Granulocyte growth factor
+35807437,Muscarinic receptor antagonist,45983,35803694,35807437,35803694,3422,Emesis prevention
+35807438,XPO1 inhibitor,45985,912163,35807438,912163,58229,Targeted therapeutic
+35807438,XPO1 inhibitor,45985,35807503,35807438,35807503,46202,Selective inhibitors of nuclear export
+35807438,XPO1 inhibitor,45985,35807466,35807438,35807466,46112,Antineoplastics by class effect
+35807439,Ultralow molecular weight heparin,45990,35807264,35807439,35807264,45147,Anticoagulant
+35807439,Ultralow molecular weight heparin,45990,35807480,35807439,35807480,46148,Classical hematology medication
+35807440,Anti-IL-6 antibody,45993,912161,35807440,912161,58102,Immunosuppressive monoclonal antibody
+35807440,Anti-IL-6 antibody,45993,35807190,35807440,35807190,44947,Antibody medication
+35807440,Anti-IL-6 antibody,45993,35807335,35807440,35807335,45538,Immunosuppressant
+35807441,Dendritic cell vaccine,45994,35807504,35807441,35807504,46204,Immune effector cell
+35807441,Dendritic cell vaccine,45994,35807466,35807441,35807466,46112,Antineoplastics by class effect
+35807441,Dendritic cell vaccine,45994,35807274,35807441,35807274,45186,Cellular therapy
+35807441,Dendritic cell vaccine,45994,35807483,35807441,35807483,46156,Biologic product
+35807441,Dendritic cell vaccine,45994,35807443,35807441,35807443,45998,Intervention index
+35807441,Dendritic cell vaccine,45994,35807189,35807441,35807189,44946,Immunotherapeutic
+35807442,SMO inhibitor,45997,912163,35807442,912163,58229,Targeted therapeutic
+35807442,SMO inhibitor,45997,35807384,35807442,35807384,45766,Hedgehog pathway inhibitor
+35807442,SMO inhibitor,45997,35807466,35807442,35807466,46112,Antineoplastics by class effect
+35807444,Oncolytic viral therapy,46005,912052,35807444,912052,16456,Cytotoxic chemotherapeutic
+35807444,Oncolytic viral therapy,46005,35807466,35807444,35807466,46112,Antineoplastics by class effect
+35807446,Anti-TRAIL-R2 antibody,46009,912007,35807446,912007,12278,Antineoplastic monoclonal antibody
+35807446,Anti-TRAIL-R2 antibody,46009,912163,35807446,912163,58229,Targeted therapeutic
+35807446,Anti-TRAIL-R2 antibody,46009,35807190,35807446,35807190,44947,Antibody medication
+35807446,Anti-TRAIL-R2 antibody,46009,35807466,35807446,35807466,46112,Antineoplastics by class effect
+35807447,Farnesyltransferase inhibitor,46011,912163,35807447,912163,58229,Targeted therapeutic
+35807447,Farnesyltransferase inhibitor,46011,35807466,35807447,35807466,46112,Antineoplastics by class effect
+35807447,Farnesyltransferase inhibitor,46011,35807471,35807447,35807471,46122,Enzyme inhibitor
+35807448,Chimeric antigen receptor T-cell,46012,35807504,35807448,35807504,46204,Immune effector cell
+35807448,Chimeric antigen receptor T-cell,46012,35807274,35807448,35807274,45186,Cellular therapy
+35807448,Chimeric antigen receptor T-cell,46012,35807189,35807448,35807189,44946,Immunotherapeutic
+35807448,Chimeric antigen receptor T-cell,46012,35807443,35807448,35807443,45998,Intervention index
+35807448,Chimeric antigen receptor T-cell,46012,35807466,35807448,35807466,46112,Antineoplastics by class effect
+35807448,Chimeric antigen receptor T-cell,46012,35807483,35807448,35807483,46156,Biologic product
+35807449,Anti-IL-6R antibody,46015,912161,35807449,912161,58102,Immunosuppressive monoclonal antibody
+35807449,Anti-IL-6R antibody,46015,35807190,35807449,35807190,44947,Antibody medication
+35807449,Anti-IL-6R antibody,46015,35807335,35807449,35807335,45538,Immunosuppressant
+35807450,Aminopeptidase inhibitor,46017,912163,35807450,912163,58229,Targeted therapeutic
+35807450,Aminopeptidase inhibitor,46017,35807471,35807450,35807471,46122,Enzyme inhibitor
+35807450,Aminopeptidase inhibitor,46017,35807466,35807450,35807466,46112,Antineoplastics by class effect
+35807451,Peptibody medication,46022,912163,35807451,912163,58229,Targeted therapeutic
+35807451,Peptibody medication,46022,35807466,35807451,35807466,46112,Antineoplastics by class effect
+35807452,Anti-CD27 antibody,46025,912007,35807452,912007,12278,Antineoplastic monoclonal antibody
+35807452,Anti-CD27 antibody,46025,912163,35807452,912163,58229,Targeted therapeutic
+35807452,Anti-CD27 antibody,46025,912160,35807452,912160,58101,Immunostimulatory monoclonal antibody
+35807452,Anti-CD27 antibody,46025,35807190,35807452,35807190,44947,Antibody medication
+35807452,Anti-CD27 antibody,46025,35807189,35807452,35807189,44946,Immunotherapeutic
+35807452,Anti-CD27 antibody,46025,35807466,35807452,35807466,46112,Antineoplastics by class effect
+35807453,MAP2K4 inhibitor,46030,912163,35807453,912163,58229,Targeted therapeutic
+35807453,MAP2K4 inhibitor,46030,912191,35807453,912191,59452,Serine-threonine kinase inhibitor
+35807453,MAP2K4 inhibitor,46030,35807466,35807453,35807466,46112,Antineoplastics by class effect
+35807453,MAP2K4 inhibitor,46030,35807428,35807453,35807428,45943,MEK inhibitor
+35807453,MAP2K4 inhibitor,46030,35807197,35807453,35807197,44955,Kinase inhibitor
+35807454,MAP3K20 inhibitor,46031,912191,35807454,912191,59452,Serine-threonine kinase inhibitor
+35807454,MAP3K20 inhibitor,46031,912163,35807454,912163,58229,Targeted therapeutic
+35807454,MAP3K20 inhibitor,46031,35807466,35807454,35807466,46112,Antineoplastics by class effect
+35807454,MAP3K20 inhibitor,46031,35807197,35807454,35807197,44955,Kinase inhibitor
+35807455,MAP4K5 inhibitor,46032,912163,35807455,912163,58229,Targeted therapeutic
+35807455,MAP4K5 inhibitor,46032,912191,35807455,912191,59452,Serine-threonine kinase inhibitor
+35807455,MAP4K5 inhibitor,46032,35807197,35807455,35807197,44955,Kinase inhibitor
+35807455,MAP4K5 inhibitor,46032,35807428,35807455,35807428,45943,MEK inhibitor
+35807455,MAP4K5 inhibitor,46032,35807466,35807455,35807466,46112,Antineoplastics by class effect
+35807456,Bcl-2 inhibitor,46035,912163,35807456,912163,58229,Targeted therapeutic
+35807456,Bcl-2 inhibitor,46035,35807466,35807456,35807466,46112,Antineoplastics by class effect
+35807456,Bcl-2 inhibitor,46035,35807505,35807456,35807505,46206,Apoptosis promoter
+35807457,Vinca alkaloid,46039,912052,35807457,912052,16456,Cytotoxic chemotherapeutic
+35807457,Vinca alkaloid,46039,35807466,35807457,35807466,46112,Antineoplastics by class effect
+35807457,Vinca alkaloid,46039,35807223,35807457,35807223,45002,Microtubule inhibitor
+35807460,SMO or PTCH-1 (Hedgehog) medication,46057,35807489,35807460,35807489,46170,Site-agnostic medication
+35807461,PLK1 inhibitor,46060,912163,35807461,912163,58229,Targeted therapeutic
+35807461,PLK1 inhibitor,46060,912191,35807461,912191,59452,Serine-threonine kinase inhibitor
+35807461,PLK1 inhibitor,46060,35807197,35807461,35807197,44955,Kinase inhibitor
+35807461,PLK1 inhibitor,46060,35807466,35807461,35807466,46112,Antineoplastics by class effect
+35807462,PAR1 inhibitor,46062,35807468,35807462,35807468,46116,Antiplatelet agent
+35807463,Vitamin K antagonist,46065,35807480,35807463,35807480,46148,Classical hematology medication
+35807463,Vitamin K antagonist,46065,35807264,35807463,35807264,45147,Anticoagulant
+35807464,Soluble decoy receptor,46069,912163,35807464,912163,58229,Targeted therapeutic
+35807464,Soluble decoy receptor,46069,35807466,35807464,35807466,46112,Antineoplastics by class effect
+35807471,Enzyme inhibitor,46122,912163,35807471,912163,58229,Targeted therapeutic
+35807471,Enzyme inhibitor,46122,35807466,35807471,35807466,46112,Antineoplastics by class effect
+35807472,Malignant hematology medication,46126,35807470,35807472,35807470,46120,Site-specific medication
+35807473,Genitourinary oncology medication,46128,35807470,35807473,35807470,46120,Site-specific medication
+35807477,Thoracic oncology medication,46138,35807470,35807477,35807470,46120,Site-specific medication
+35807478,Growth factor inhibitor,46140,912163,35807478,912163,58229,Targeted therapeutic
+35807478,Growth factor inhibitor,46140,35807466,35807478,35807466,46112,Antineoplastics by class effect
+35807482,Gynecologic oncology medication,46154,35807470,35807482,35807470,46120,Site-specific medication
+35807483,Biologic product,46156,35807443,35807483,35807443,45998,Intervention index
+35807484,Coagulopathy medication,46158,35807480,35807484,35807480,46148,Classical hematology medication
+35807485,Gastrointestinal oncology medication,46160,35807470,35807485,35807470,46120,Site-specific medication
+35807486,Thrombosis medication,46162,35807242,35807486,35807242,45072,Hematology medication
+35807488,Endocrine oncology medication,46166,35807470,35807488,35807470,46120,Site-specific medication
+35807490,Neurooncology medication,46172,35807470,35807490,35807470,46120,Site-specific medication
+35807492,Histiocytoses medication,46180,35807472,35807492,35807472,46126,Malignant hematology medication
+35807492,Histiocytoses medication,46180,35807470,35807492,35807470,46120,Site-specific medication
+35807494,Molecular chaperone inhibitor,46184,912163,35807494,912163,58229,Targeted therapeutic
+35807494,Molecular chaperone inhibitor,46184,35807466,35807494,35807466,46112,Antineoplastics by class effect
+35807496,GTPase-activating protein inhibitor,46188,912163,35807496,912163,58229,Targeted therapeutic
+35807496,GTPase-activating protein inhibitor,46188,35807466,35807496,35807466,46112,Antineoplastics by class effect
+35807497,Granulocyte growth factor,46190,905615,35807497,905615,20221,Growth factor
+35807497,Granulocyte growth factor,46190,35807272,35807497,35807272,45175,Hematopoietic growth factor
+35807500,Androgen receptor inhibitor,46196,35807466,35807500,35807466,46112,Antineoplastics by class effect
+35807500,Androgen receptor inhibitor,46196,35807205,35807500,35807205,44970,Endocrine therapeutic
+35807503,Selective inhibitors of nuclear export,46202,912163,35807503,912163,58229,Targeted therapeutic
+35807503,Selective inhibitors of nuclear export,46202,35807466,35807503,35807466,46112,Antineoplastics by class effect
+35807504,Immune effector cell,46204,35807466,35807504,35807466,46112,Antineoplastics by class effect
+35807504,Immune effector cell,46204,35807274,35807504,35807274,45186,Cellular therapy
+35807504,Immune effector cell,46204,35807483,35807504,35807483,46156,Biologic product
+35807504,Immune effector cell,46204,35807189,35807504,35807189,44946,Immunotherapeutic
+35807504,Immune effector cell,46204,35807443,35807504,35807443,45998,Intervention index
+35807505,Apoptosis promoter,46206,912163,35807505,912163,58229,Targeted therapeutic
+35807505,Apoptosis promoter,46206,35807466,35807505,35807466,46112,Antineoplastics by class effect
+35101525,Anti-IFNg antibody,46300,912161,35101525,912161,58102,Immunosuppressive monoclonal antibody
+35101525,Anti-IFNg antibody,46300,35807335,35101525,35807335,45538,Immunosuppressant
+35101525,Anti-IFNg antibody,46300,35807190,35101525,35807190,44947,Antibody medication
+42542418,Anti-Factor XIa antibody,53777,912087,42542418,912087,22790,Hematologic monoclonal antibody
+42542418,Anti-Factor XIa antibody,53777,35807190,42542418,35807190,44947,Antibody medication
+42542425,EZH2 inhibitor,53873,912163,42542425,912163,58229,Targeted therapeutic
+42542425,EZH2 inhibitor,53873,35807466,42542425,35807466,46112,Antineoplastics by class effect
+42542425,EZH2 inhibitor,53873,35807471,42542425,35807471,46122,Enzyme inhibitor
+912160,Immunostimulatory monoclonal antibody,58101,35807190,912160,35807190,44947,Antibody medication
+912160,Immunostimulatory monoclonal antibody,58101,35807466,912160,35807466,46112,Antineoplastics by class effect
+912160,Immunostimulatory monoclonal antibody,58101,35807189,912160,35807189,44946,Immunotherapeutic
+912161,Immunosuppressive monoclonal antibody,58102,35807335,912161,35807335,45538,Immunosuppressant
+912161,Immunosuppressive monoclonal antibody,58102,35807190,912161,35807190,44947,Antibody medication
+912163,Targeted therapeutic,58229,35807466,912163,35807466,46112,Antineoplastics by class effect
+912164,Viral DNA synthesis inhibitor,58247,35807476,912164,35807476,46136,Antibiotic
+912164,Viral DNA synthesis inhibitor,58247,35807219,912164,35807219,44995,Antiviral
+912169,KRAS inhibitor,59260,912163,912169,912163,58229,Targeted therapeutic
+912169,KRAS inhibitor,59260,35807466,912169,35807466,46112,Antineoplastics by class effect
+912189,RAF1 inhibitor,59416,912163,912189,912163,58229,Targeted therapeutic
+912189,RAF1 inhibitor,59416,912191,912189,912191,59452,Serine-threonine kinase inhibitor
+912189,RAF1 inhibitor,59416,35807197,912189,35807197,44955,Kinase inhibitor
+912189,RAF1 inhibitor,59416,35807466,912189,35807466,46112,Antineoplastics by class effect
+912191,Serine-threonine kinase inhibitor,59452,912163,912191,912163,58229,Targeted therapeutic
+912191,Serine-threonine kinase inhibitor,59452,35807197,912191,35807197,44955,Kinase inhibitor
+912191,Serine-threonine kinase inhibitor,59452,35807466,912191,35807466,46112,Antineoplastics by class effect
+912198,Tyrosine kinase inhibitor,59504,912163,912198,912163,58229,Targeted therapeutic
+912198,Tyrosine kinase inhibitor,59504,35807197,912198,35807197,44955,Kinase inhibitor
+912198,Tyrosine kinase inhibitor,59504,35807466,912198,35807466,46112,Antineoplastics by class effect
+912203,WEE1 inhibitor,59523,912163,912203,912163,58229,Targeted therapeutic
+912203,WEE1 inhibitor,59523,912198,912203,912198,59504,Tyrosine kinase inhibitor
+912203,WEE1 inhibitor,59523,35807466,912203,35807466,46112,Antineoplastics by class effect
+912203,WEE1 inhibitor,59523,35807197,912203,35807197,44955,Kinase inhibitor
+905737,Radioconjugate,61256,35807298,905737,35807298,45316,Radiation
+905737,Radioconjugate,61256,35807217,905737,35807217,44991,Radiotherapy medication
+905737,Radioconjugate,61256,35807443,905737,35807443,45998,Intervention index
+905742,Peptide-drug conjugate,61410,912052,905742,912052,16456,Cytotoxic chemotherapeutic
+905742,Peptide-drug conjugate,61410,35807466,905742,35807466,46112,Antineoplastics by class effect
+1525101,Epothilone,63956,912052,1525101,912052,16456,Cytotoxic chemotherapeutic
+1525101,Epothilone,63956,1525005,1525101,1525005,43610,Antitumor antibiotic
+1525101,Epothilone,63956,35807466,1525101,35807466,46112,Antineoplastics by class effect
+905784,ROCK2 inhibitor,65099,912191,905784,912191,59452,Serine-threonine kinase inhibitor
+905784,ROCK2 inhibitor,65099,912163,905784,912163,58229,Targeted therapeutic
+905784,ROCK2 inhibitor,65099,35807466,905784,35807466,46112,Antineoplastics by class effect
+905784,ROCK2 inhibitor,65099,35807197,905784,35807197,44955,Kinase inhibitor
+905787,Transcription factor inhibitor,65163,912163,905787,912163,58229,Targeted therapeutic
+905787,Transcription factor inhibitor,65163,35807466,905787,35807466,46112,Antineoplastics by class effect
+911924,Antiestrogen,918,35807466,911924,35807466,46112,Antineoplastics by class effect
+911924,Antiestrogen,918,35807205,911924,35807205,44970,Endocrine therapeutic
+35100440,Penicillin,93236,35807476,35100440,35807476,46136,Antibiotic
+35100440,Penicillin,93236,35807328,35100440,35807328,45517,Antibacterial

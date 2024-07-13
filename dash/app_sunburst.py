@@ -15,17 +15,18 @@ import plotly.graph_objs as go
 '''Georgie's code'''
 # copy the data to your drive and then modify this path as required
 
-folder = 'synpuff/'
+folder = '../synpuff/'
 
 # base query for generating the cohort
-concept = pd.read_csv('synpuff/CONCEPT.csv')
-condition_occurrence = pd.read_csv('synpuff/CONDITION_OCCURRENCE.csv')
-drug_exposure = pd.read_csv('synpuff/DRUG_EXPOSURE.csv')
-observation = pd.read_csv('synpuff/OBSERVATION.csv')
-person = pd.read_csv('synpuff/PERSON.csv')
-procedure_occurrence = pd.read_csv('synpuff/PROCEDURE_OCCURRENCE.csv')
-hierarchy = pd.read_csv('synpuff/hierarchy.csv')
-props = pd.read_csv('synpuff/hemonc_component_properties.csv')
+person = pd.read_csv('../synpuff/person.csv')
+condition_occurrence = pd.read_csv('../synpuff/condition_occurrence.csv')
+drug_exposure = pd.read_csv('../synpuff/drug_exposure.csv')
+concept = pd.read_csv('../synpuff/concept.csv')
+hierarchy = pd.read_csv('../synpuff/hierarchy.csv')
+props = pd.read_csv('../synpuff/hemonc_component_properties.csv')
+
+neoplasm_codes = [44832128,44834489,44834490,44819488,44826452,44825256]
+condition_occurrence=condition_occurrence.loc[condition_occurrence['condition_source_concept_id'].isin(neoplasm_codes)]
 
 '''Ivy's code'''
 #rxnorm = props[props['vocabulary_id']=='RxNorm']
@@ -58,9 +59,7 @@ def make_labels(df):
 
 condition_occurrence_labelled = make_labels(condition_occurrence)
 drug_exposure_labelled = make_labels(drug_exposure)
-observation_labelled = make_labels(observation)
 person_labelled = make_labels(person)
-procedure_occurrence_labelled = make_labels(procedure_occurrence)
 
 '''Applying extra filters to drug df'''
 drug_exposure_labelled['drug_exposure_year'] = pd.to_datetime(drug_exposure_labelled['drug_exposure_start_date'], format='%Y-%m-%d').dt.year
@@ -78,12 +77,12 @@ cond_pivot = condition_labelled_small.pivot(index='person_id', columns='occ_numb
 drug_persons = pd.merge(drug_persons, cond_pivot, on='person_id', how='left')
 '''Reshaping dataframe'''
 #reduce DF down to relevant variables for the visualization
-small = drug_persons[['person_id', 'drug_exposure_start_datetime', 'drug_concept_label', 'drug_exposure_year', 'gender_concept_label', 'age_at_treatment', 'cond_0', 'cond_1', 'cond_2', 'cond_3', 'cond_4', 'cond_5', 'cond_6']]
+small = drug_persons[['person_id', 'drug_exposure_start_date', 'drug_concept_label', 'drug_exposure_year', 'gender_concept_label', 'age_at_treatment', 'cond_0', 'cond_1', 'cond_2', 'cond_3']]
 #small = pd.merge(small, cond_pivot, on='person_id', how='left')
 #small = small.dropna()
 small = small.drop_duplicates()
 small_sorted = small.sort_values('drug_concept_label')
-small['drug_concept_label'] = small_sorted.groupby(['person_id', 'drug_exposure_start_datetime'])['drug_concept_label'].transform(lambda x : ' & '.join(x))
+#small['drug_concept_label'] = small_sorted.groupby(['person_id', 'drug_exposure_start_date'])['drug_concept_label'].transform(lambda x : ' & '.join(x))
 #small.head()
 small_nodup = small_sorted.drop_duplicates()
 #small_nodup['drug_concept_label']=small_nodup['drug_concept_label'].str.replace('& ', '&<br>')
@@ -97,7 +96,7 @@ id_administrations = {}
 for pid in all_id:
     # These are all the times a patient with a given ID has had surgery                                                                                                                                            
     patient = small_nodup.loc[small_nodup['person_id']==pid]
-    administrations_sorted = pd.to_datetime(patient['drug_exposure_start_datetime'], format='%Y-%m-%d %H:%M:%S').sort_values()
+    administrations_sorted = pd.to_datetime(patient['drug_exposure_start_date'], format='%Y-%m-%d').sort_values()
 
 # This checks if the previous surgery was longer than 180 days ago                                                                                                                                              
     frequency = administrations_sorted.diff()<dt.timedelta(days=6000)
@@ -133,52 +132,23 @@ df = df.fillna(" ")
 '''dash'''
 app = Dash(__name__)
 
-drugoptions = ['fluorouracil',
-            'capecitabine',
-            'cisplatin',
-            'docetaxel',
-            'gemcitabine',
-            'carboplatin',
-            'pembrolizumab',
-            'paclitaxel',
-            'allopurinol',
-            'promethazine',
-            'cetuximab',
-            'prochlorperazine',
-            'pemetrexed',
-            'epirubicin',
-            'etoposide',
-            'prednisolone',
-            'azacitidine',
-            'vinorelbine',
-            'cemiplimab',
-            'dacarbazine',
-            'rituximab',
-            'leucovorin',
-            'oxaliplatin',
-            'zoledronic acid']
+drugoptions = ['epoetin alfa',
+               'cyclophosphamide',
+               'methylprednisolone',
+               'filgrastim',
+               'paclitaxel',
+               'doxorubicin',
+               'leuprolide',
+               'azacitidine',
+               'triptorelin',
+               'hydrocortisone',
+               'octreotide',
+               'methotrexate']
 
-options = ['Squamous cell carcinoma, NOS, of glottis',
-            'Squamous cell carcinoma, NOS, of base of tongue, NOS',
-            'Squamous cell carcinoma, NOS, of supraglottis',
-            'Squamous cell carcinoma, NOS, of anterior 2/3 of tongue, NOS',
-            'Squamous cell carcinoma, NOS, of tonsillar fossa',
-            'Squamous cell carcinoma, NOS, of tonsil, NOS',
-            'Neoplasm defined only by topography: Head, face or neck, NOS',
-            'Squamous cell carcinoma, NOS, of oropharynx, NOS',
-            'Squamous cell carcinoma, NOS, of overlapping lesions of oropharynx',
-            'Squamous cell carcinoma, NOS, of hypopharynx, NOS',
-            'Squamous cell carcinoma, NOS, of anterior floor of mouth',
-            'Squamous cell carcinoma, NOS, of overlapping lesion of larynx',
-            'Squamous cell carcinoma, NOS, of overlapping lesion of tonsil',
-            'Adenocarcinoma, NOS, of prostate gland',
-            'Carcinoma, undifferentiated, NOS, of overlapping lesion of nasopharynx',
-            'Squamous cell carcinoma, NOS, of tongue, NOS',
-            'Neoplasm, malignant of base of tongue, NOS',
-            'Squamous cell carcinoma, NOS, of retromolar area',
-            'Squamous cell carcinoma, NOS, of soft palate, NOS',
-            'Squamous cell carcinoma, NOS, of overlapping lesion of hypopharynx',
-            'Squamous cell carcinoma, NOS, of nasal cavity']
+options = ['Malignant neoplasm of nipple and areola of female breast',
+            'Malignant neoplasm of axillary tail of female breast',
+            'Malignant neoplasm of other specified sites of female breast',
+            'Carcinoma in situ of breast']
 
 app.layout = html.Div(children=[
     html.H1(children='Sunburst', style={'textAlign':'center'}),
@@ -189,27 +159,27 @@ app.layout = html.Div(children=[
         # first treatment
         dcc.Checklist(
             drugoptions,
-            ['cisplatin','carboplatin'],
+            ['doxorubicin','cyclophosphamide'],
         id='first_treatment'
         ),
         html.Br(),
         dcc.Checklist(
             [{"label":"Select all drugs", "value":"Alldrugs"}],
-            value=[],
+            options,
             id='all_drugs_or_none'
             )
     ], style={'display':'inline-block', 'width':'10%'}),
 
     #Left menu 2
     html.Div([
-        html.B(children='Gender', style={'textAlign':'left'}),
+        html.B(children='Sex', style={'textAlign':'left'}),
         dcc.Checklist(
             ['MALE', 'FEMALE'],
             ['MALE', 'FEMALE'],
         id='person_gender'
         ),
         html.B(children='Age at treatment', style={'textAlign':'left'}),
-        dcc.RangeSlider(min=20, max=88, value=[20, 88],
+        dcc.RangeSlider(min=26, max=101, value=[26, 101],
         id='age_at_treatment',
         tooltip={
             "always_visible": False
@@ -217,12 +187,8 @@ app.layout = html.Div(children=[
         ),
         html.B(children='Treatment Year', style={'textAlign':'left'}),
         dcc.Checklist(
-            [2008, 2009, 2010, 2011, 2012, 
-            2013, 2014, 2015, 2016, 2017,
-            2018, 2019, 2020, 2021, 2022],
-            [2012, 
-            2013, 2014, 2015, 2016, 2017,
-            2018, 2019, 2020, 2021, 2022],
+            [2007, 2008, 2009, 2010],
+            [2007, 2008, 2009, 2010],
         id='treatment_year'
         )
     ], style={'display':'inline-block', 'width':'10%'}),
@@ -241,8 +207,8 @@ app.layout = html.Div(children=[
             #Slider container
             html.Div(
                 dcc.Slider(
-                    min=0,max=30, step=1,
-                    value=6,
+                    min=0,max=4, step=1,
+                    value=2,
                     id='sankey_slider',
                     tooltip={
                         "always_visible": True
@@ -257,7 +223,7 @@ app.layout = html.Div(children=[
             ),
             dcc.Checklist(
             options,
-            value=['Squamous cell carcinoma, NOS, of glottis'],
+            value=["Malignant neoplasm of nipple and areola of female breast"],
             inline=True,
             id='condition'
         )
@@ -311,7 +277,7 @@ def select_all_drugs(drugs_selected, all_drugs_selected):
 def update_graph(selected_genders, selected_ages, selected_years, selected_treatments, slider_value, selected_conditions):
     global small_nodup
     nodup = small_nodup.copy()
-    nodup = nodup[nodup[['cond_0','cond_1','cond_2','cond_3','cond_4','cond_5','cond_6',]].isin(selected_conditions).any(axis=1)]
+    nodup = nodup[nodup[['cond_0','cond_1','cond_2','cond_3']].isin(selected_conditions).any(axis=1)]
     nodup = nodup[nodup['gender_concept_label'].isin(selected_genders)]
     nodup = nodup[nodup['age_at_treatment'] >= selected_ages[0]]
     nodup = nodup[nodup['age_at_treatment'] <= selected_ages[1]]
@@ -330,7 +296,7 @@ def update_graph(selected_genders, selected_ages, selected_years, selected_treat
 
     #other filters
     column_names_list = df.columns.values.tolist()
-    drug_num = column_names_list[1:slider_value+2] 
+    drug_num = column_names_list[1:slider_value+1] 
     df = df[df['drug0'].isin(selected_treatments)]
     df = df.fillna(" ")
     
@@ -341,7 +307,7 @@ def update_graph(selected_genders, selected_ages, selected_years, selected_treat
     #set marker colors whose labels are " " to transparent
     marker_colors=list(fig.data[0].marker['colors'])
     marker_labels=list(fig.data[0]['labels'])
-    new_marker_colors=["rgba(0,0,0,0)" if label==" " else color for (color, label) in zip(marker_colors, marker_labels)]
+    new_marker_colors=["rgba(0,0,0,0)" if ((label==" ")or(label=="1")) else color for (color, label) in zip(marker_colors, marker_labels)]
     marker_colors=new_marker_colors
     fig.data[0].marker['colors'] = marker_colors
     return fig
