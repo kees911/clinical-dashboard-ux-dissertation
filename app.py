@@ -25,20 +25,10 @@ import plotly.express as px
 folder = 'synpuff/'
 
 # base query for generating the cohort
-care_site = pd.read_csv('synpuff/CARE_SITE.csv')
-cohort_filter = pd.read_csv('synpuff/COHORT_FILTER.csv')
-concept_class= pd.read_csv('synpuff/CONCEPT_CLASS.csv')
-concept = pd.read_csv('synpuff/CONCEPT.csv')
-condition_occurrence = pd.read_csv('synpuff/CONDITION_OCCURRENCE.csv')
-domain = pd.read_csv('synpuff/DOMAIN.csv')
-drug_exposure = pd.read_csv('synpuff/DRUG_EXPOSURE.csv')
-location = pd.read_csv('synpuff/LOCATION.csv')
-measurement = pd.read_csv('synpuff/MEASUREMENT.csv')
-observation = pd.read_csv('synpuff/OBSERVATION.csv')
-person = pd.read_csv('synpuff/PERSON.csv')
-procedure_occurrence = pd.read_csv('synpuff/PROCEDURE_OCCURRENCE.csv')
-provider = pd.read_csv('synpuff/PROVIDER.csv')
-vocabulary = pd.read_csv('synpuff/VOCABULARY.csv')
+person = pd.read_csv('synpuff/person.csv')
+condition_occurrence = pd.read_csv('synpuff/condition_occurrence.csv')
+drug_exposure = pd.read_csv('synpuff/drug_exposure.csv')
+concept = pd.read_csv('synpuff/concept.csv')
 
 # make labels from mapping concept IDs to concept labels
 concept_lookup = {c.concept_id: c.concept_name for c in concept.itertuples()}
@@ -51,21 +41,14 @@ def make_labels(df):
             df = df.drop(c, axis=1)
     return df
 
-care_site_labelled = make_labels(care_site)
-cohort_filter_labelled = make_labels(cohort_filter)
-condition_occurrence_labelled = make_labels(condition_occurrence)
-domain_labelled = make_labels(domain)
-drug_exposure_labelled = make_labels(drug_exposure)
-location_labelled = make_labels(location)
-measurement_labelled = make_labels(measurement)
-observation_labelled = make_labels(observation)
 person_labelled = make_labels(person)
-procedure_occurrence_labelled = make_labels(procedure_occurrence)
-provider_labelled = make_labels(provider)
-vocabulary_labelled = make_labels(vocabulary)
+condition_occurrence_labelled = make_labels(condition_occurrence)
+drug_exposure_labelled = make_labels(drug_exposure)
+measurement_labelled = pd.read_csv('synpuff/measurement.csv')
+procedure_occurrence_labelled = pd.read_csv('synpuff/procedure.csv')
 
 '''Timeline'''
-person_code = 
+person_code = 1705545
 
 # pull out individual from relevant datasets
 cond_indiv = condition_occurrence_labelled.loc[condition_occurrence_labelled['person_id']==person_code]
@@ -87,6 +70,9 @@ cond_indiv.drop_duplicates(subset=['content', 'start'],keep='last',inplace=True)
 
 ### drug exposures
 drug_indiv.rename(columns={'drug_exposure_start_date':'start', 'drug_exposure_end_date':'end'}, inplace=True)
+drug_indiv['route_concept_label']="Route not specified"
+drug_indiv['quantity'].fillna("")
+drug_indiv['drug_concept_label'].fillna("Drug not specified", inplace=True)
 drug_indiv['content'] = drug_indiv['drug_concept_label'] + ', ' + drug_indiv['route_concept_label'] + ', ' + drug_indiv['quantity'].astype(str)
 drug_indiv['group'] = 'drug exposure'
 drug_indiv['className'] = 'drugs'
@@ -99,7 +85,7 @@ meas_weight['value_as_number']=meas_weight['value_as_number'].apply(str)
 meas_grouped = meas_weight.groupby(['measurement_date'])['value_as_number'].transform(lambda x: ' kg,<br>Weight change: '.join(x))
 meas_weight['value_as_number'] = meas_grouped
 meas_weight['content'] = 'Body weight: ' + meas_weight['value_as_number'] + '%'
-meas_weight['content'] = meas_weight['content'].replace({'Body weight: 77.4%':'Body weight: 77.4 kg'})
+#meas_weight['content'] = meas_weight['content'].replace({'Body weight: 77.4%':'Body weight: 77.4 kg'})
 #Rename columns
 meas_weight.rename(columns={'measurement_date':'start'}, inplace=True)
 meas_weight['group'] = 'measurement'
@@ -125,6 +111,7 @@ tl_event_list['end'] = tl_event_list['end'].fillna('null')
 #also change one-day events to null, otherwise they don't show up
 tl_event_list['end'] = np.where(tl_event_list['end']==tl_event_list['start'], 'null', tl_event_list['end'])
 #it turns out they're actually all one-day items...
+tl_event_list.fillna('null', inplace=True)
 
 '''Appointments Table'''
 # Extends the timeline's information
@@ -143,12 +130,12 @@ appts_list = appts_nodup[['Start','End','Description','Quantity','Type','Categor
 
 
 '''Weight Chart'''
-meas_graphs = meas_indiv.loc[meas_indiv['measurement_concept_label'].isin(['Body surface area', 'Body height', 'Body weight', 'Weight change'])]
+meas_graphs = meas_indiv.loc[meas_indiv['measurement_concept_label'].isin(['Body mass index (BMI) [Ratio]', 'Body height', 'Body weight', 'Weight change'])]
 meas_graphs['measurement_concept_label']=meas_graphs['measurement_concept_label'].replace({
     'Body weight':'Body weight (kg)', 
     'Weight change':'Weight change (%)',
     'Body height': 'Body height (cm)',
-    'Body surface area': 'Body surface area (m\u00B2)'})
+    'Body mass index (BMI) [Ratio]': 'BMI (kg/m\u00B2)'})
 weight_fig = px.scatter(meas_graphs, x="measurement_date", y="value_as_number", 
 facet_col="measurement_concept_label", facet_col_wrap=2,
 facet_row_spacing=0.1, facet_col_spacing=0.05)

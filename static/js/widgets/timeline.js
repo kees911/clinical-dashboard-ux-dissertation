@@ -62,8 +62,8 @@ $.getJSON("http://127.0.0.1:5000/api/tlapi").done(function(data){
     var options = {
         //width: '1625px',
         //height: '540px',
-        min: '2012-07-01',
-        max: '2014-01-01',
+        min: '2008-01-01',
+        max: '2010-12-12',
         showCurrentTime: false,
         horizontalScroll: true,
         zoomable: false,

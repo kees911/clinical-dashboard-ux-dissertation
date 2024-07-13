@@ -21,7 +21,7 @@ new DataTable('#p1panda', {
     info: false,
     paging: false,
     scrollCollapse: true,
-    scrollY: '15vh',
+    scrollY: '18vh',
     //scrollX: '955px',
     "searching": true,
     scroller: true,

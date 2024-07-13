@@ -1,0 +1,5 @@
+procedure_occurrence_id,procedure_date,person_id,procedure_concept_label,procedure_type_concept_label
+17881503-12bd-34d7-21ee-de28f3192205,2008-10-17,1705545,Physical examination complete,Examination
+71ebf260-fbf3-2bc1-aff7-2ebf1eb8a4d3,2008-10-18,1705545,Mammography,Examination
+e6579d67-a0b9-110d-76e3-4b501ef12bbf,2008-10-19,1705545,Manual pelvic examination,Examination
+e6579d67-a0b9-110d-76e3-4b501ef12bbf,2008-10-20,1705545,Cytopathology procedure preparation of smear genital source,Examination

@@ -1,0 +1,46 @@
+measurement_id,person_id,measurement_date,measurement_datetime,measurement_time,value_as_number,measurement_concept_label,unit_concept_label,measurement_type_concept_label
+f58d40ef-6d5e-bd81-7ebb-5eedd2c6ed97,1705545,2008-01-27,2008-01-27 16:02:00,16:02:00,162.4,Body height,cm,Vital signs
+f58d40ef-6d5e-bd81-7ebb-5eedd2c6ed97,1705545,2008-01-27,2008-01-27 16:02:00,16:02:00,76.3,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+f58d40ef-6d5e-bd81-7ebb-5eedd2c6ed97,1705545,2008-01-27,2008-01-27 16:02:00,16:02:00,21.2,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+f58d40ef-6d5e-bd81-7ebb-5eedd2c6ed97,1705545,2008-01-27,2008-01-27 16:02:00,16:02:00,55.8,Body weight,kg,Vital signs
+f1a24503-271b-a86e-2b33-47bc192d20c0,1705545,2008-04-01,2008-04-01 16:02:00,16:02:00,165.5,Body height,cm,Vital signs
+f1a24503-271b-a86e-2b33-47bc192d20c0,1705545,2008-04-01,2008-04-01 16:02:00,16:02:00,73.3,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+f1a24503-271b-a86e-2b33-47bc192d20c0,1705545,2008-04-01,2008-04-01 16:02:00,16:02:00,21.5,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+f1a24503-271b-a86e-2b33-47bc192d20c0,1705545,2008-04-01,2008-04-01 16:02:00,16:02:00,59,Body weight,kg,Vital signs
+f1a24503-271b-a86e-2b33-47bc192d20c0,1705545,2008-04-01,2008-04-01 16:02:00,16:02:00,5.7,Weight change,percent,Vital signs
+2c88945b-4a7d-9493-74ee-7c5e464430ac,1705545,2008-06-09,2008-06-09 16:02:00,16:02:00,166.8,Body height,cm,Vital signs
+2c88945b-4a7d-9493-74ee-7c5e464430ac,1705545,2008-06-09,2008-06-09 16:02:00,16:02:00,69.7,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+2c88945b-4a7d-9493-74ee-7c5e464430ac,1705545,2008-06-09,2008-06-09 16:02:00,16:02:00,21.7,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+2c88945b-4a7d-9493-74ee-7c5e464430ac,1705545,2008-06-09,2008-06-09 16:02:00,16:02:00,60.5,Body weight,kg,Vital signs
+2c88945b-4a7d-9493-74ee-7c5e464430ac,1705545,2008-06-09,2008-06-09 16:02:00,16:02:00,8.4,Weight change,percent,Vital signs
+833c9a36-341e-e8ca-b312-a971b8a25ff4,1705545,2008-07-23,2008-07-23 03:02:00,3:02:00,37.5,Body temperature,Cel,Vital signs
+bb2943a0-e728-a1d3-4224-b206c53c886c,1705545,2008-08-07,2008-08-07 16:02:00,16:02:00,167.2,Body height,cm,Vital signs
+bb2943a0-e728-a1d3-4224-b206c53c886c,1705545,2008-08-07,2008-08-07 16:02:00,16:02:00,70.1,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+bb2943a0-e728-a1d3-4224-b206c53c886c,1705545,2008-08-07,2008-08-07 16:02:00,16:02:00,22.1,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+bb2943a0-e728-a1d3-4224-b206c53c886c,1705545,2008-08-07,2008-08-07 16:02:00,16:02:00,61.8,Body weight,kg,Vital signs
+bb2943a0-e728-a1d3-4224-b206c53c886c,1705545,2008-08-07,2008-08-07 16:02:00,16:02:00,10.8,Weight change,percent,Vital signs
+7f443ab8-ebc7-30b2-cb5f-16513ac4be53,1705545,2009-01-06,2009-01-06 16:02:00,16:02:00,167.4,Body height,cm,Vital signs
+7f443ab8-ebc7-30b2-cb5f-16513ac4be53,1705545,2009-01-06,2009-01-06 16:02:00,16:02:00,56.5,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+7f443ab8-ebc7-30b2-cb5f-16513ac4be53,1705545,2009-01-06,2009-01-06 16:02:00,16:02:00,21,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+7f443ab8-ebc7-30b2-cb5f-16513ac4be53,1705545,2009-01-06,2009-01-06 16:02:00,16:02:00,58.9,Body weight,kg,Vital signs
+7f443ab8-ebc7-30b2-cb5f-16513ac4be53,1705545,2009-01-06,2009-01-06 16:02:00,16:02:00,5.6,Weight change,percent,Vital signs
+7a770b35-1ddf-1c26-7164-4d8bcd448eaa,1705545,2009-03-07,2009-03-07 16:02:00,16:02:00,167.7,Body height,cm,Vital signs
+7a770b35-1ddf-1c26-7164-4d8bcd448eaa,1705545,2009-03-07,2009-03-07 16:02:00,16:02:00,33.1,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+7a770b35-1ddf-1c26-7164-4d8bcd448eaa,1705545,2009-03-07,2009-03-07 16:02:00,16:02:00,19.7,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+7a770b35-1ddf-1c26-7164-4d8bcd448eaa,1705545,2009-03-07,2009-03-07 16:02:00,16:02:00,55.5,Body weight,kg,Vital signs
+7a770b35-1ddf-1c26-7164-4d8bcd448eaa,1705545,2009-03-07,2009-03-07 16:02:00,16:02:00,-0.5,Weight change,percent,Vital signs
+dbde39b4-0e0e-42da-c8ed-6ace23a9e903,1705545,2009-05-06,2009-05-06 01:02:00,1:02:00,37.4,Body temperature,Cel,Vital signs
+6d33a77a-4c71-965e-e57b-3c1fe7ecb902,1705545,2009-11-06,2009-11-06 16:02:00,16:02:00,167.9,Body height,cm,Vital signs
+6d33a77a-4c71-965e-e57b-3c1fe7ecb902,1705545,2009-11-06,2009-11-06 16:02:00,16:02:00,38.9,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+6d33a77a-4c71-965e-e57b-3c1fe7ecb902,1705545,2009-11-06,2009-11-06 16:02:00,16:02:00,20.5,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+6d33a77a-4c71-965e-e57b-3c1fe7ecb902,1705545,2009-11-06,2009-11-06 16:02:00,16:02:00,57.7,Body weight,kg,Vital signs
+6d33a77a-4c71-965e-e57b-3c1fe7ecb902,1705545,2009-11-06,2009-11-06 16:02:00,16:02:00,3.4,Weight change,percent,Vital signs
+576deff1-3c88-17aa-e698-e4291da9fca1,1705545,2010-03-02,2010-03-02 16:02:00,16:02:00,168,Body height,cm,Vital signs
+576deff1-3c88-17aa-e698-e4291da9fca1,1705545,2010-03-02,2010-03-02 16:02:00,16:02:00,43.4,Body mass index (BMI) [Percentile] Per age and sex,%,Vital signs
+576deff1-3c88-17aa-e698-e4291da9fca1,1705545,2010-03-02,2010-03-02 16:02:00,16:02:00,21.1,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+576deff1-3c88-17aa-e698-e4291da9fca1,1705545,2010-03-02,2010-03-02 16:02:00,16:02:00,59.5,Body weight,kg,Vital signs
+576deff1-3c88-17aa-e698-e4291da9fca1,1705545,2010-03-02,2010-03-02 16:02:00,16:02:00,6.6,Weight change,percent,Vital signs
+ab6d8183-2807-2b5a-59ee-095ee5b655cd,1705545,2010-09-23,2010-09-23 16:02:00,16:02:00,168.1,Body height,cm,Vital signs
+ab6d8183-2807-2b5a-59ee-095ee5b655cd,1705545,2010-09-23,2010-09-23 16:02:00,16:02:00,22.5,Body mass index (BMI) [Ratio],kg-m2,Vital signs
+ab6d8183-2807-2b5a-59ee-095ee5b655cd,1705545,2010-09-23,2010-09-23 16:02:00,16:02:00,63.6,Body weight,kg,Vital signs
+ab6d8183-2807-2b5a-59ee-095ee5b655cd,1705545,2010-09-23,2010-09-23 16:02:00,16:02:00,14,Weight change,percent,Vital signs
