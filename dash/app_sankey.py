@@ -283,7 +283,8 @@ app.layout = html.Div(children=[
             #Graph container
             html.Div(
                 dcc.Graph(
-                    id='hn_sankey'
+                    id='hn_sankey',
+                    style={'height': '50vh'}
                     )
             ),
 
