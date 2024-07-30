@@ -25,7 +25,10 @@ concept = pd.read_csv('../synpuff/concept.csv')
 hierarchy = pd.read_csv('../synpuff/hierarchy.csv')
 props = pd.read_csv('../synpuff/hemonc_component_properties.csv')
 
-neoplasm_codes = [44832128,44834489,44834490,44819488,44826452,44825256]
+neoplasm_codes = [44832128,44834489,44834490,44819488,44826452,44825256,
+                  44836837,
+                  44822871, 44825197, 44820602, 44835672,
+                  44829798, 44828730]
 condition_occurrence=condition_occurrence.loc[condition_occurrence['condition_source_concept_id'].isin(neoplasm_codes)]
 
 '''Ivy's code'''
@@ -63,7 +66,7 @@ person_labelled = make_labels(person)
 
 '''Applying extra filters to drug df'''
 drug_exposure_labelled['drug_exposure_year'] = pd.to_datetime(drug_exposure_labelled['drug_exposure_start_date'], format='%Y-%m-%d').dt.year
-exclusions = ['dexamethasone']
+exclusions = ['dexamethasone', 'filgrastim', 'epoetin alfa', 'methylprednisolone', 'hydrocortisone', 'octreotide']
 drug_exposure_labelled=drug_exposure_labelled[~drug_exposure_labelled['drug_concept_label'].isin(exclusions)]
 
 '''Data Linkage'''
@@ -216,23 +219,25 @@ def genSankey(df, cat_cols=[], value_cols='', title='Sankey Diagram'):
 '''dash'''
 app = Dash(__name__)
 
-drugoptions = ['epoetin alfa',
-               'cyclophosphamide',
-               'methylprednisolone',
-               'filgrastim',
+drugoptions = ['cyclophosphamide',
                'paclitaxel',
                'doxorubicin',
                'leuprolide',
                'azacitidine',
                'triptorelin',
-               'hydrocortisone',
-               'octreotide',
                'methotrexate']
 
 options = ['Malignant neoplasm of nipple and areola of female breast',
             'Malignant neoplasm of axillary tail of female breast',
             'Malignant neoplasm of other specified sites of female breast',
-            'Carcinoma in situ of breast']
+            'Carcinoma in situ of breast',
+            'Malignant neoplasm of head of pancreas',
+            'Malignant neoplasm of body of pancreas',
+            'Malignant neoplasm of tail of pancreas',
+            'Malignant neoplasm of pancreatic duct',
+            'Malignant neoplasm of other specified sites of pancreas',
+            'Malignant neoplasm of pancreas, part unspecified',
+            'Malignant neoplasm of ovary']
 
 app.layout = html.Div(children=[
     html.H1(children='Sankey', style={'textAlign':'center'}),
